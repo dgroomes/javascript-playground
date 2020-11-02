@@ -13,6 +13,14 @@ console.log(myUtils.prettyJson({
 
 let myCar = new Car()
 myCar.describe()
+myCar.describe()
+myCar.describe()
+console.log(`myCar.noisesCounter: ${myCar.noisesCounter}`)
 
 let myTruck = new Truck()
 myTruck.describe()
+myTruck.describe()
+myTruck.describe()
+myTruck.describe()
+console.log(`myTruck.noisesCounter: ${myTruck.noisesCounter}`)
+
