@@ -5,6 +5,7 @@
 let {printPrettyJson} = require('./my-utils')
 let {Car} = require('./car')
 let {Truck} = require('./truck')
+let {TruckV2} = require('./truck-v2')
 
 printPrettyJson({
     message: "Welcome to my javascript-playground!",
@@ -33,7 +34,7 @@ console.log(`myTruck.noisesCounter: ${myTruck.noisesCounter}`)
  */
 let counter = 0
 let handler = {
-    get: function(target, prop, receiver) {
+    get: function (target, prop, receiver) {
         counter++
         console.log(`[myTruckProxy handler] invoked with prop=${prop} counter=${counter}`)
         return Reflect.get(...arguments)
@@ -45,3 +46,6 @@ let myTruckProxy = new Proxy(myTruck, handler)
 myTruckProxy.describe()
 myTruckProxy.noisesCounter
 myTruckProxy.noisesCounter
+
+let myTruckV2 = new TruckV2()
+myTruckV2.describe()
