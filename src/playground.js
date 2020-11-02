@@ -6,6 +6,7 @@ let {printPrettyJson} = require('./my-utils')
 let {Car} = require('./car')
 let {Truck} = require('./truck')
 let {TruckV2} = require('./truck-v2')
+let {Evasive} = require('./evasive')
 
 printPrettyJson({
     message: "Welcome to my javascript-playground!",
@@ -49,3 +50,8 @@ myTruckProxy.noisesCounter
 
 let myTruckV2 = new TruckV2()
 myTruckV2.describe()
+
+/*******************************/
+
+let evasive = new Evasive()
+console.log(`evasive.constructor.name: ${evasive.constructor.name}`) // wow, it's an Array and not an instace of Evasive!
