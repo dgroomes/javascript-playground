@@ -3,8 +3,14 @@
  */
 class Car {
 
-    makeNoise() {
-        console.log("I'm a car. I go *honk*")
+    describe() {
+        let noise = this.noise()
+        let type = this.constructor.name;
+        console.log(`I'm a ${type}. I go *${noise}*`)
+    }
+
+    noise() {
+        return "honk"
     }
 }
 

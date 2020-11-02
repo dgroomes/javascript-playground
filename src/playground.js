@@ -12,7 +12,7 @@ console.log(myUtils.prettyJson({
 }))
 
 let myCar = new Car()
-myCar.makeNoise()
+myCar.describe()
 
 let myTruck = new Truck()
-myTruck.makeNoise()
+myTruck.describe()
