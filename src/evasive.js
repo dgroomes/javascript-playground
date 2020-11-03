@@ -5,8 +5,19 @@
  */
 class Evasive {
     constructor() {
+        console.log("[Evasive] Hello from the constructor")
         return new Array(1,2,3)
     }
 }
 
-module.exports = {Evasive}
+/**
+ * Does a super class whose constructor returns a value have any effect on the sub-class? ANSWER: yes. wow!
+ */
+class EvasiveSubclass extends Evasive {
+    constructor() {
+        super();
+        console.log("[EvasiveSubclass] Hello from the constructor")
+    }
+}
+
+module.exports = {Evasive, EvasiveSubclass}
