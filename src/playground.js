@@ -2,29 +2,44 @@
 //
 // Exploring the JavaScript programming language in a 'playground' file.
 
-let {printPrettyJson} = require('./my-utils')
-let {Car} = require('./car')
-let {Truck} = require('./truck')
-let {TruckV2} = require('./truck-v2')
-let {Evasive, EvasiveSubclass} = require('./evasive')
+function separate() {
+    console.log("\n\n\n")
+}
 
-printPrettyJson({
-    message: "Welcome to my javascript-playground!",
-    objective: "📚 Learning and exploring JavaScript"
-})
+/*
+ * Welcome!
+ */
+{
+    let {printPrettyJson} = require('./my-utils')
 
-let myCar = new Car()
-myCar.describe()
-myCar.describe()
-myCar.describe()
-console.log(`myCar.noisesCounter: ${myCar.noisesCounter}`)
+    printPrettyJson({
+        message: "Welcome to my javascript-playground!",
+        objective: "📚 Learning and exploring JavaScript"
+    })
+    separate()
+}
 
-let myTruck = new Truck()
-myTruck.describe()
-myTruck.describe()
-myTruck.describe()
-myTruck.describe()
-console.log(`myTruck.noisesCounter: ${myTruck.noisesCounter}`)
+/**
+ * A basic example that showcases JavaScript classes (introduced in "ECMAScript 2015" a.k.a. ES6)
+ */
+{
+    let {Car} = require('./car')
+    let {Truck} = require('./truck')
+
+    let myCar = new Car()
+    myCar.describe()
+    myCar.describe()
+    myCar.describe()
+    console.log(`myCar.noisesCounter: ${myCar.noisesCounter}`)
+
+    let myTruck = new Truck()
+    myTruck.describe()
+    myTruck.describe()
+    myTruck.describe()
+    myTruck.describe()
+    console.log(`myTruck.noisesCounter: ${myTruck.noisesCounter}`)
+    separate()
+}
 
 /*
  * Let's learn about the Proxy class.
@@ -33,27 +48,49 @@ console.log(`myTruck.noisesCounter: ${myTruck.noisesCounter}`)
  *
  * Modeled after https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy
  */
-let counter = 0
-let handler = {
-    get: function (target, prop, receiver) {
-        counter++
-        console.log(`[myTruckProxy handler] invoked with prop=${prop} counter=${counter}`)
-        return Reflect.get(...arguments)
-    }
-};
+{
+    let {Truck} = require('./truck')
 
-let myTruckProxy = new Proxy(myTruck, handler)
+    let myTruck = new Truck()
+    let counter = 0
+    let handler = {
+        get: function (target, prop, receiver) {
+            counter++
+            console.log(`[myTruckProxy handler] invoked with prop=${prop} counter=${counter}`)
+            return Reflect.get(...arguments)
+        }
+    };
 
-myTruckProxy.describe()
-myTruckProxy.noisesCounter
-myTruckProxy.noisesCounter
+    let myTruckProxy = new Proxy(myTruck, handler)
 
-let myTruckV2 = new TruckV2()
-myTruckV2.describe()
+    myTruckProxy.describe()
+    myTruckProxy.noisesCounter
+    myTruckProxy.noisesCounter
+    separate()
+}
 
-/*******************************/
+/*
+ * Showcasing my `TrackV2` and by extension my `ProxiedCar` classes
+ */
+{
+    let {TruckV2} = require('./truck-v2')
 
-let evasive = new Evasive()
-console.log(`evasive.constructor.name: ${evasive.constructor.name}`) // wow, it's an Array and not an instace of Evasive!
-let evasiveSubclass = new EvasiveSubclass()
-console.log(`evasiveSubclass.constructor.name: ${evasiveSubclass.constructor.name}`) // ?
+    let myTruckV2 = new TruckV2()
+    myTruckV2.describe()
+    myTruckV2.describe()
+    console.log(`myTruckV2.noisesCounter: ${myTruckV2.noisesCounter}`)
+    separate()
+}
+
+/*
+ * Showcasing my `Evasive` class
+ */
+{
+    let {Evasive, EvasiveSubclass} = require('./evasive')
+
+    let evasive = new Evasive()
+    console.log(`evasive.constructor.name: ${evasive.constructor.name}`) // wow, it's an Array and not an instace of Evasive!
+    let evasiveSubclass = new EvasiveSubclass()
+    console.log(`evasiveSubclass.constructor.name: ${evasiveSubclass.constructor.name}`) // ?
+    separate()
+}

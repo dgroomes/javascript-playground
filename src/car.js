@@ -19,6 +19,8 @@ class Car {
         // A simple implementation would be to write `this.noisesCounter++` in the Truck's "noise()" method. But this is
         // duplicative and in part defeats the advantage of having a base class, where ostensibly all common and "cross-cutting"
         // code can be defined.
+        // Solution: see a cross-cutting solution in `proxied-car.js`. It uses a neat trick where you can return a Proxy
+        // class from the constructor.
         this.noisesCounter++
         return "honk"
     }
