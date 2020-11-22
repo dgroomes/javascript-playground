@@ -11,10 +11,12 @@ function separate() {
  */
 {
     let {printPrettyJson} = require('./my-utils')
+    let args = process.argv;
 
     printPrettyJson({
         message: "Welcome to my javascript-playground!",
-        objective: "📚 Learning and exploring JavaScript"
+        objective: "📚 Learning and exploring JavaScript",
+        args: args
     })
     separate()
 }
