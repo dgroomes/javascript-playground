@@ -15,6 +15,7 @@ To use this script, install the dependencies with `npm install`. Then execute th
 * [MDN web docs: Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 * [MDN web docs: Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
 * [nodejs: ECMAScript modules](https://nodejs.org/api/esm.html#esm_enabling)
+* [StackOverflow question and answer: a form of multi-module projects](https://stackoverflow.com/a/29787493)
 
 
 ## Wish List
