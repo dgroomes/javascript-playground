@@ -3,5 +3,7 @@
   "version": "1.0.0",
   "repository": "https://github.com/dgroomes/javascript-playground",
   "license": "UNLICENSED",
-  "dependencies": {}
+  "dependencies": {
+    "cli-progress": "^3.9.0"
+  }
 }

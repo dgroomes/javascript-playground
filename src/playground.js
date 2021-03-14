@@ -96,3 +96,29 @@ function separate() {
     console.log(`evasiveSubclass.constructor.name: ${evasiveSubclass.constructor.name}`) // ?
     separate()
 }
+
+/**
+ * Using the 'cli-progress' library to draw a progress bar
+ */
+{
+    const {Bar} = require('cli-progress');
+
+    const MAX = 100;
+    const INTERVAL_MS = 200;
+
+    const bar = new Bar();
+    bar.start(MAX, 0);
+
+    // Continually progress the progress bar on an interval until it reaches 100%.
+    let value = 0;
+    const timer = setInterval(function () {
+        value += 10;
+        bar.update(value)
+
+        // Check if finished
+        if (value >= bar.getTotal()) {
+            clearInterval(timer);
+            bar.stop();
+        }
+    }, INTERVAL_MS);
+}

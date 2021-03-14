@@ -23,3 +23,8 @@ To use this script, install the dependencies with `npm install`. Then execute th
 General clean ups, TODOs and things I wish to implement for this project:
 
 * DONE Parse commandline arguments passed to Node
+* DONE Node has some fancy console logging features in its standard libraries, like the `console.table` function. Is there
+  more? Is there a way to update the output printed to the console dynamically? Like a progress bar? Answer: well, I found
+  a very popular library called "cli-progress" so I'll just use that. And under the hood, it uses a lower-level abstraction
+  called `Terminal` to render the content to the terminal. So with some more studying, I could learn from the `Terminal`
+  code to figure out how to draw arbitrary stuff to the console.
