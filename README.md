@@ -28,3 +28,6 @@ General clean ups, TODOs and things I wish to implement for this project:
   a very popular library called "cli-progress" so I'll just use that. And under the hood, it uses a lower-level abstraction
   called `Terminal` to render the content to the terminal. So with some more studying, I could learn from the `Terminal`
   code to figure out how to draw arbitrary stuff to the console.
+* DONE Draw arbitrary stuff to the console, and *re-draw* new stuff that overwrites the old stuff, using "cli-progress"'s
+  `Terminal` abstraction.  
+* Replace "Terminal" usage with plain "readline"
