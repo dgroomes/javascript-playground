@@ -4,6 +4,7 @@
   "repository": "https://github.com/dgroomes/javascript-playground",
   "license": "UNLICENSED",
   "dependencies": {
-    "cli-progress": "^3.9.0"
+    "cli-progress": "^3.9.0",
+    "draftlog": "^1.0.12"
   }
 }

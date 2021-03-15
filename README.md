@@ -31,3 +31,5 @@ General clean ups, TODOs and things I wish to implement for this project:
 * DONE Draw arbitrary stuff to the console, and *re-draw* new stuff that overwrites the old stuff, using "cli-progress"'s
   `Terminal` abstraction.  
 * Replace "Terminal" usage with plain "readline"
+* DONE Do another "draw to the terminal" example similar to what "cli-progress" does and the "readline" example does but do it
+  over multiple lines.
