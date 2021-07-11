@@ -1,26 +1,4 @@
 #!/usr/bin/env node
-//
-// Exploring the JavaScript programming language. This 'runner' file executes various JavaScript files that each showcase
-// JavaScript concepts and JavaScript APIs.
-
-function separate() {
-    console.log("\n\n\n")
-}
-
-/*
- * Welcome!
- */
-{
-    let {printPrettyJson} = require('./my-utils')
-    let args = process.argv;
-
-    printPrettyJson({
-        message: "Welcome to my javascript-playground!",
-        objective: "📚 Learning and exploring JavaScript",
-        args: args
-    })
-    separate()
-}
 
 /**
  * A basic example that showcases JavaScript classes (introduced in "ECMAScript 2015" a.k.a. ES6)
@@ -41,7 +19,7 @@ function separate() {
     myTruck.describe()
     myTruck.describe()
     console.log(`myTruck.noisesCounter: ${myTruck.noisesCounter}`)
-    separate()
+    console.log("")
 }
 
 /*
@@ -69,7 +47,7 @@ function separate() {
     myTruckProxy.describe()
     myTruckProxy.noisesCounter
     myTruckProxy.noisesCounter
-    separate()
+    console.log("")
 }
 
 /*
@@ -82,7 +60,7 @@ function separate() {
     myTruckV2.describe()
     myTruckV2.describe()
     console.log(`myTruckV2.noisesCounter: ${myTruckV2.noisesCounter}`)
-    separate()
+    console.log("")
 }
 
 /*
@@ -95,35 +73,5 @@ function separate() {
     console.log(`evasive.constructor.name: ${evasive.constructor.name}`) // wow, it's an Array and not an instace of Evasive!
     let evasiveSubclass = new EvasiveSubclass()
     console.log(`evasiveSubclass.constructor.name: ${evasiveSubclass.constructor.name}`) // ?
-    separate()
-}
-
-// Now we move into example scripts that use asynchronous JavaScript functions. Unfortunately, now we need to use a different
-// programming model to invoke these programs because JavaScript does not allow the `async` operator to be used at the top-level
-// of a program. Instead, we must use Promises to schedule these functions so that they run in serial, one after the other.
-// This programming model couples these function invocations together, in my opinion, which makes for code that is not as
-// readable as the imperative code that came before.
-{
-    /**
-     * Draw a series of messages to the console over time. Each subsequent message overwrites the previous message on the
-     * screen.
-     */
-    const {drawMessages} = require('./draw-and-redraw');
-    drawMessages([
-        "hello!",
-        "hi there 👋!",
-        "I'm here!"
-    ]).then(() => {
-        separate()
-
-        /**
-         * Draw a multiline message to the console using the "draftlog" library and re-draw the message with additional
-         * exclamation points (!) over a period of time.
-         */
-        const {drawMessageMultiline} = require('./draw-and-redraw-multiline')
-        drawMessageMultiline(
-            `hello
-hi there 👋
-I'm here`)
-    })
+    console.log("")
 }
