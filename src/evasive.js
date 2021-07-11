@@ -11,7 +11,9 @@ class Evasive {
 }
 
 /**
- * Does a super class whose constructor returns a value have any effect on the sub-class? ANSWER: yes. wow!
+ * Is a sub-class of an "evasive" super class affected by the constructor return value?
+ *
+ * Answer: Yes. When the sub-class is instantiated (e.g. `new MySubClass()`) Wow, this is surprising!
  */
 class EvasiveSubclass extends Evasive {
     constructor() {

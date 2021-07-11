@@ -4,7 +4,12 @@
 
 ## Instructions
 
-To use this script, install the dependencies with `npm install`. Then execute the script with `node src/playground.js`.
+Follow these instructions to run the code.
+
+* Install dependencies:
+  * `npm install`
+* Execute the playground JavaScript code:
+  * `node src/playground.js`
 
 ## Materials referenced
 
@@ -21,6 +26,17 @@ To use this script, install the dependencies with `npm install`. Then execute th
 ## Wish List
    
 General clean ups, TODOs and things I wish to implement for this project:
+
+* Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
+  a `index.html` and no other files) is killer. For a few reasons. For one, it's the only way to run JavaScript in the
+  browser from a file (although I think browser vendors are experimenting with other sandboxed options I think...). Running
+  code from a file is the most approachable way for a new developer. Makes the project approachable. The second reason
+  is that I think a single document is easier to grok than a program with multiple sources (I didn't articulate this very
+  well, but I mean it).
+* Incorporate the `draw-*.js` JS scripts into the `src/playground.js` runner script or detail the exact instructions to runs
+  these JS scripts.
+
+Finished items:
 
 * DONE Parse commandline arguments passed to Node
 * DONE Node has some fancy console logging features in its standard libraries, like the `console.table` function. Is there
