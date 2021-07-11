@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 //
-// Exploring the JavaScript programming language in a 'playground' file.
+// Exploring the JavaScript programming language. This 'runner' file executes various JavaScript files that each showcase
+// JavaScript concepts and JavaScript APIs.
 
 function separate() {
     console.log("\n\n\n")

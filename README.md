@@ -9,7 +9,7 @@ Follow these instructions to run the code.
 * Install dependencies:
   * `npm install`
 * Execute the playground JavaScript code:
-  * `node src/playground.js`
+  * `node src/runner.js`
 
 ## Materials referenced
 
