@@ -5,6 +5,7 @@ const {readFileSync} = require('fs')
 {
     let file = 'README.md';
     console.log(`Reading file synchronously: ${file}...`)
-    let buffer = readFileSync(file);
-    console.log(`Buffer length: ${buffer.length}`)
+    let buffer = readFileSync(file)
+    let fileContent = new TextDecoder().decode(buffer)
+    console.log(`File content:\n${fileContent}`)
 }
