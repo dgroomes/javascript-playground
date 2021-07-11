@@ -1,40 +1,41 @@
 // Use the NodeJS "readline" API to draw things to the console.
 const readline = require("readline")
 
-drawMessages([
-    "hello!",
-    "hi there 👋!",
-    "I'm here!"
-])
-
 /**
  * Draw a series of messages to the console over time. Each subsequent message overwrites the previous message on the
  * screen.
+ * @return {Promise<void>} a Promise that resolves when the drawing has finished
  */
 function drawMessages(messages) {
     if (messages.length < 2) {
         throw Error("'messages' must have a length of at least 2!")
     }
-    let stream = process.stdout
-    stream.write(messages[0])
+    return new Promise((resolve, _) => {
 
-    let messageIndex = 1
+        let stream = process.stdout
+        stream.write(messages[0])
 
-    const INTERVAL_MS = 1000
-    const messageWritingInterval = setInterval(() => {
+        let messageIndex = 1
 
-        // Check if exhausted the messages.
-        if (messageIndex === messages.length) {
-            readline.cursorTo(stream,0)
-            stream.write("")
-            clearInterval(messageWritingInterval)
-            return
-        }
+        const INTERVAL_MS = 1000
+        const messageWritingInterval = setInterval(() => {
 
-        const message = messages[messageIndex]
-        readline.clearLine(stream, 0)
-        readline.cursorTo(stream, 0)
-        stream.write(message)
-        messageIndex++
-    }, INTERVAL_MS)
+            // Check if exhausted the messages.
+            if (messageIndex === messages.length) {
+                readline.cursorTo(stream, 0)
+                stream.write("")
+                clearInterval(messageWritingInterval)
+                resolve()
+                return
+            }
+
+            const message = messages[messageIndex]
+            readline.clearLine(stream, 0)
+            readline.cursorTo(stream, 0)
+            stream.write(message)
+            messageIndex++
+        }, INTERVAL_MS)
+    })
 }
+
+module.exports = {drawMessages}

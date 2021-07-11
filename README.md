@@ -33,8 +33,9 @@ General clean ups, TODOs and things I wish to implement for this project:
   code from a file is the most approachable way for a new developer. Makes the project approachable. The second reason
   is that I think a single document is easier to grok than a program with multiple sources (I didn't articulate this very
   well, but I mean it).
-* Incorporate the `draw-*.js` JS scripts into the `src/playground.js` runner script or detail the exact instructions to runs
+* DONE Incorporate the `draw-*.js` JS scripts into the `src/playground.js` runner script or detail the exact instructions to runs
   these JS scripts.
+* Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
 
 Finished items:
 

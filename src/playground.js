@@ -97,28 +97,32 @@ function separate() {
     separate()
 }
 
-/**
- * Using the 'cli-progress' library to draw a progress bar
- */
+// Now we move into example scripts that use asynchronous JavaScript functions. Unfortunately, now we need to use a different
+// programming model to invoke these programs because JavaScript does not allow the `async` operator to be used at the top-level
+// of a program. Instead, we must use Promises to schedule these functions so that they run in serial, one after the other.
+// This programming model couples these function invocations together, in my opinion, which makes for code that is not as
+// readable as the imperative code that came before.
 {
-    const {Bar} = require('cli-progress');
+    /**
+     * Draw a series of messages to the console over time. Each subsequent message overwrites the previous message on the
+     * screen.
+     */
+    const {drawMessages} = require('./draw-and-redraw');
+    drawMessages([
+        "hello!",
+        "hi there 👋!",
+        "I'm here!"
+    ]).then(() => {
+        separate()
 
-    const MAX = 100;
-    const INTERVAL_MS = 200;
-
-    const bar = new Bar();
-    bar.start(MAX, 0);
-
-    // Continually progress the progress bar on an interval until it reaches 100%.
-    let value = 0;
-    const timer = setInterval(function () {
-        value += 10;
-        bar.update(value)
-
-        // Check if finished
-        if (value >= bar.getTotal()) {
-            clearInterval(timer);
-            bar.stop();
-        }
-    }, INTERVAL_MS);
+        /**
+         * Draw a multiline message to the console using the "draftlog" library and re-draw the message with additional
+         * exclamation points (!) over a period of time.
+         */
+        const {drawMessageMultiline} = require('./draw-and-redraw-multiline')
+        drawMessageMultiline(
+            `hello
+hi there 👋
+I'm here`)
+    })
 }
