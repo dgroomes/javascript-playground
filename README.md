@@ -23,6 +23,12 @@ Showcasing object-oriented language features of JavaScript.
 
 See the README in [object-oriented/](object-oriented/). 
 
+## `file/`
+
+Example usages of the NodeJS file APIs.
+
+See the README in [file/](file/).
+
 ## Materials referenced
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
@@ -39,7 +45,7 @@ See the README in [object-oriented/](object-oriented/).
    
 General clean ups, TODOs and things I wish to implement for this project:
 
-* Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
+* IN PROGRESS Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
   a `index.html` and no other files) is killer. For a few reasons. For one, it's the only way to run JavaScript in the
   browser from a file (although I think browser vendors are experimenting with other sandboxed options I think...). Running
   code from a file is the most approachable way for a new developer. Makes the project approachable. The second reason
