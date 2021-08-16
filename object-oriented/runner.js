@@ -75,3 +75,28 @@
     console.log(`evasiveSubclass.constructor.name: ${evasiveSubclass.constructor.name}`) // ?
     console.log("")
 }
+
+/**
+ * Proxying a function. How does that work? It doesn't have "properties" like an object would. Normally with a JavaScript
+ * Proxy object, you intercept access attempts to its properties and then run some instrumented code. But when the thing
+ * being proxied is a function, how do you intercept the invocation of the function?
+ *
+ * Answer: the trick is to define the 'apply' accessor/function/thing.
+ */
+{
+    console.log("Proxying a function.")
+    function hi() {
+        return console.log("hi there!")
+    }
+
+    let proxy = new Proxy(hi, {
+        apply() {
+            console.log("The proxy's 'apply' was called")
+            return Reflect.apply(...arguments)
+        }
+    })
+
+    console.log("Invoking the proxy object that proxies the 'hi()' function:")
+    proxy()
+    console.log("")
+}
