@@ -2,6 +2,13 @@
 
 📚 Learning and exploring JavaScript.
 
+---
+**NOTE**:
+
+This was developed on macOS and for my own personal use.
+
+---
+
 ## Standalone sub-projects
 
 This repository illustrates different concepts, patterns and examples via standalone sub-projects. Each sub-project is
@@ -13,7 +20,7 @@ The sub-projects include:
 
 ## `console/`
 
-Example scripts that print to the console.
+Print dynamic content to the console with `readline` and DraftLog.
 
 See the README in [console/](console/). 
 
