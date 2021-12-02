@@ -7,8 +7,10 @@ Print dynamic content to the console with `readline` and DraftLog.
 Writing this playground repository helped me learn:
 
 * The NodeJS [`readline` module](https://nodejs.org/api/readline.html)
-* The [DraftLog] library:
+* The [DraftLog](https://github.com/ivanseidel/node-draftlog) library
   > Create mutable log lines into the terminal, and give life to your logs!
+  >
+  >  -- <cite>https://github.com/ivanseidel/node-draftlog</cite>
 
 ## Instructions
 
