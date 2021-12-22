@@ -36,6 +36,12 @@ Example usages of the NodeJS file APIs.
 
 See the README in [file/](file/).
 
+## `webpack/`
+
+A webpack-based project that uses TypeScript and `webpack-dev-server`.
+
+See the README in [webpack/](webpack/).
+
 ## Materials referenced
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
