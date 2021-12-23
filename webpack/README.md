@@ -19,10 +19,18 @@ Follow these instructions to build and run the project.
 
 1. Install dependencies
    * `npm install`
-3. Build the project continuously and serve the output:
+1. Build the project:
+   * `npm run build`
+1. Alternatively, build the project continuously and serve the output:
    * `npm run start`
    * The project is ready to be viewed in the browser! The browser should open automatically.
-     
+
+## Wish List
+
+General clean ups, ITEMs and things I wish to implement for this project:
+
+* DONE Bug. The source `index.html` file is not actually used.
+* Add CSS. Make sure to use the idiomatic webpack way. 
 
 ## Reference 
 

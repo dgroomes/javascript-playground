@@ -3,7 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development', entry: './src/index.ts', plugins: [new HtmlWebpackPlugin({
-        title: 'Development',
+        title: 'javascript-playground/webpack',
+        template: 'src/index.html'
     }),], module: {
         rules: [{
             test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/,
