@@ -25,12 +25,22 @@ Follow these instructions to build and run the project.
    * `npm run start`
    * The project is ready to be viewed in the browser! The browser should open automatically.
 
+## Webpack Philosophy
+
+My understanding of webpack's philosophy is "bake stuff into JavaScript files when possible". The most famous example of
+this is webpack's support for CSS. Webpack takes the "CSS-in-JS" route, where the application's CSS styles are
+actually embedded into `.js` files which means that the application loads CSS styles via JavaScript and not via the
+classic (traditional? idiomatic?) pattern of loading CSS via `<link rel="stylesheet"...>` tags or `<style...>` tags.
+
+Webpack's extensive user guide (much appreciated, great work on the guides!) describes the pattern for loading CSS in
+under the [Asset Management sub-guide](https://webpack.js.org/guides/asset-management/#loading-css).
+
 ## Wish List
 
 General clean ups, ITEMs and things I wish to implement for this project:
 
 * DONE Bug. The source `index.html` file is not actually used.
-* Add CSS. Make sure to use the idiomatic webpack way. 
+* DONE Add CSS. Make sure to use the idiomatic webpack way. 
 
 ## Reference 
 

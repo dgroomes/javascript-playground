@@ -3,11 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development', entry: './src/index.ts', plugins: [new HtmlWebpackPlugin({
-        title: 'javascript-playground/webpack',
-        template: 'src/index.html'
+        title: 'javascript-playground/webpack', template: 'src/index.html'
     }),], module: {
         rules: [{
             test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/,
+        }, {
+            test: /\.css$/i, use: ["style-loader", "css-loader"],
         },],
     }, devtool: 'inline-source-map', output: {
         filename: '[name].bundle.js', path: path.resolve(__dirname, 'dist'), clean: true,
