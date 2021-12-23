@@ -14,5 +14,7 @@ module.exports = {
         static: {
             directory: path.join(__dirname, 'dist'),
         },
-    },
+    }, resolve: {
+        extensions: [".ts", ".js"],
+    }
 };

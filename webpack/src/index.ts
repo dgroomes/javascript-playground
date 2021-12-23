@@ -1,9 +1,6 @@
-import * as _ from 'lodash';
+import {greeting} from "./greeting";
 
-function greetingElement(): Element {
-    const element = document.createElement('div');
-    element.innerHTML = _.join(['Hello', 'from', "'javascript-playground/webpack'", '!'], ' ');
-    return element;
-}
+const greetingEl: Element = document.createElement('div');
+greetingEl.innerHTML = greeting();
 
-document.body.appendChild(greetingElement());
+document.body.appendChild(greetingEl);
