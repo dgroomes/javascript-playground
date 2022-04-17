@@ -1,6 +1,6 @@
 # webpack
 
-A webpack-based project that uses TypeScript and `webpack-dev-server`.
+An intermediate Node/NPM project that uses webpack to build a TypeScript program.
 
 > At its core, webpack is a static module bundler for modern JavaScript applications.
 > 
@@ -8,10 +8,11 @@ A webpack-based project that uses TypeScript and `webpack-dev-server`.
 
 ## Design
 
-Webpack has steadily grown over the years since its inception in 2012 (!) to become an extensive "software building
-machine" for web-based projects. As such, I would like to create a working example of a webpack-based project in 2021.
-The project will use TypeScript. I like plain JavaScript too, but for the sake of a webpack example project, it's
-interesting to splice in TypeScript which requires a compilation build step.
+Webpack (stylized as "webpack" but capitalized when used to start a sentence) has steadily grown over the years since
+its inception in 2012 (!) to become an extensive "software building machine" for web-based projects. As such, I would
+like to create a working example of a webpack-based project in 2021. The project will use TypeScript. I like plain
+JavaScript too, but for the sake of a webpack example project, it's interesting to splice in TypeScript which requires a
+compilation build step.
 
 ## Instructions
 

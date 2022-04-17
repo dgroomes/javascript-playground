@@ -33,7 +33,7 @@ See the README in [file/](file/).
 
 ## `webpack/`
 
-A webpack-based project that uses TypeScript and `webpack-dev-server`.
+An intermediate Node/NPM project that uses webpack to build a TypeScript program.
 
 See the README in [webpack/](webpack/).
 
