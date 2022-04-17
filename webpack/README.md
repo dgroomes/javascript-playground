@@ -39,8 +39,8 @@ under the [Asset Management sub-guide](https://webpack.js.org/guides/asset-manag
 
 General clean ups, ITEMs and things I wish to implement for this project:
 
-* DONE Bug. The source `index.html` file is not actually used.
-* DONE Add CSS. Make sure to use the idiomatic webpack way. 
+* [x] DONE Bug. The source `index.html` file is not actually used.
+* [x] DONE Add CSS. Make sure to use the idiomatic webpack way. 
 
 ## Reference 
 
