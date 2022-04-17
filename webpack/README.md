@@ -57,17 +57,17 @@ For Node projects, we don't have the same luxury because `package.json` files do
 does not support comments. So, I'll use this section to link to the release pages of each library that's included as a
 dependency.
 
-| Library             | Latest releases                                                                       |
-|---------------------|---------------------------------------------------------------------------------------|
-| Lodash              | <https://github.com/lodash/lodash/tags>                                               |
-| CSS Loader          | <https://github.com/webpack-contrib/css-loader/releases>                              |
-| HTML Webpack Plugin | <https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md>              |
-| Style Loader        | <https://github.com/webpack-contrib/style-loader/blob/master/CHANGELOG.md>            |
-| ts-loader           | <https://github.com/TypeStrong/ts-loader/blob/main/CHANGELOG.md>                      |
-| TypeScript          | <https://github.com/Microsoft/TypeScript/releases>                                    |
-| webpack             | <https://github.com/webpack/webpack/releases>                                         |
-| webpack CLI         | <https://github.com/webpack/webpack-cli/blob/master/packages/webpack-cli/CHANGELOG.md> |
-| webpack-dev-server  | <https://github.com/webpack/webpack-dev-server/blob/master/CHANGELOG.md>              |
+| Library                             | Latest releases                                                                        |
+|-------------------------------------|----------------------------------------------------------------------------------------|
+| @types/lodash (via DefinitelyTyped) | I don't know where to find a changelog for this.                                       |
+| CSS Loader                          | <https://github.com/webpack-contrib/css-loader/releases>                               |
+| HTML Webpack Plugin                 | <https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md>               |
+| Style Loader                        | <https://github.com/webpack-contrib/style-loader/blob/master/CHANGELOG.md>             |
+| ts-loader                           | <https://github.com/TypeStrong/ts-loader/blob/main/CHANGELOG.md>                       |
+| TypeScript                          | <https://github.com/Microsoft/TypeScript/releases>                                     |
+| webpack                             | <https://github.com/webpack/webpack/releases>                                          |
+| webpack CLI                         | <https://github.com/webpack/webpack-cli/blob/master/packages/webpack-cli/CHANGELOG.md> |
+| webpack-dev-server                  | <https://github.com/webpack/webpack-dev-server/blob/master/CHANGELOG.md>               |
 
 NPM does have a neat feature to show the latest version of a library. It's the `npm view <package>` command. It shows
 some metadata about a library (well, "package") like the latest version and it's source code link (usually GitHub, of course). 
