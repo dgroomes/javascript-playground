@@ -53,26 +53,26 @@ See the README in [webpack/](webpack/).
    
 General clean ups, TODOs and things I wish to implement for this project:
 
-* IN PROGRESS Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
+* Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
   a `index.html` and no other files) is killer. For a few reasons. For one, it's the only way to run JavaScript in the
   browser from a file (although I think browser vendors are experimenting with other sandboxed options I think...). Running
   code from a file is the most approachable way for a new developer. Makes the project approachable. The second reason
   is that I think a single document is easier to grok than a program with multiple sources (I didn't articulate this very
   well, but I mean it).
-* DONE Incorporate the `draw-*.js` JS scripts into the `src/playground.js` runner script or detail the exact instructions to runs
-  these JS scripts.
 * Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
 
 Finished items:
 
-* DONE Parse commandline arguments passed to Node
-* DONE Node has some fancy console logging features in its standard libraries, like the `console.table` function. Is there
+* [x] DONE Parse commandline arguments passed to Node
+* [x] DONE Node has some fancy console logging features in its standard libraries, like the `console.table` function. Is there
   more? Is there a way to update the output printed to the console dynamically? Like a progress bar? Answer: well, I found
   a very popular library called "cli-progress" so I'll just use that. And under the hood, it uses a lower-level abstraction
   called `Terminal` to render the content to the terminal. So with some more studying, I could learn from the `Terminal`
   code to figure out how to draw arbitrary stuff to the console.
-* DONE Draw arbitrary stuff to the console, and *re-draw* new stuff that overwrites the old stuff, using "cli-progress"'s
+* [x] DONE Draw arbitrary stuff to the console, and *re-draw* new stuff that overwrites the old stuff, using "cli-progress"'s
   `Terminal` abstraction.  
-* DONE Replace "Terminal" usage with plain "readline"
-* DONE Do another "draw to the terminal" example similar to what "cli-progress" does and the "readline" example does but do it
+* [x] DONE Replace "Terminal" usage with plain "readline"
+* [x] DONE Do another "draw to the terminal" example similar to what "cli-progress" does and the "readline" example does but do it
   over multiple lines.
+* [x] DONE Incorporate the `draw-*.js` JS scripts into the `src/playground.js` runner script or detail the exact instructions to runs
+  these JS scripts.

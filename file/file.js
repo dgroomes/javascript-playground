@@ -32,7 +32,7 @@
 
 // Copy a file with substitutions. This is a templating pattern.
 // After this code executes, you should see a file named 'copy-of-with-substitutions-README.md' which is a copy of the file
-// 'README.md' but with the followig substitutions:
+// 'README.md' but with the following substitutions:
 // * 'TODO' is replaced with 'ITEM'
 // * 'IN PROGRESS' is replaced with 'STARTED'
 // * 'DONE' is replaced with 'FINISHED'

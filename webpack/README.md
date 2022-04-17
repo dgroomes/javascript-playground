@@ -35,6 +35,68 @@ classic (traditional? idiomatic?) pattern of loading CSS via `<link rel="stylesh
 Webpack's extensive user guide (much appreciated, great work on the guides!) describes the pattern for loading CSS in
 under the [Asset Management sub-guide](https://webpack.js.org/guides/asset-management/#loading-css).
 
+## Dependencies
+
+Normally, I like to provide in-line comments in my project's dependency manifest file that describe where to find the
+latest release information for the given library. For example, for Java projects built with [Gradle](https://gradle.org/),
+the manifest file name is `build.gradle.kts`. The `.kts` file type is a Kotlin *script* file. I'll have lines like the
+following:
+
+```kotlin
+val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
+val httpComponentsV5Version = "5.1.3" // HttpComponents v5 releases: https://hc.apache.org/news.html
+val wireMockVersion = "2.33.1" // WireMock releases: https://github.com/tomakehurst/wiremock/tags
+val http4kVersion = "4.25.8.0" // http4K releases: https://github.com/http4k/http4k/releases
+```
+
+This makes it easy for me to quickly research the latest releases for a library and make an informed decision about
+whether I should I upgrade or not.
+
+For Node projects, we don't have the same luxury because `package.json` files don't support comments. Rather, JSON itself
+does not support comments. So, I'll use this section to link to the release pages of each library that's included as a
+dependency.
+
+| Library             | Latest releases                                                                       |
+|---------------------|---------------------------------------------------------------------------------------|
+| Lodash              | <https://github.com/lodash/lodash/tags>                                               |
+| CSS Loader          | <https://github.com/webpack-contrib/css-loader/releases>                              |
+| HTML Webpack Plugin | <https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md>              |
+| Style Loader        | <https://github.com/webpack-contrib/style-loader/blob/master/CHANGELOG.md>            |
+| ts-loader           | <https://github.com/TypeStrong/ts-loader/blob/main/CHANGELOG.md>                      |
+| TypeScript          | <https://github.com/Microsoft/TypeScript/releases>                                    |
+| webpack             | <https://github.com/webpack/webpack/releases>                                         |
+| webpack CLI         | <https://github.com/webpack/webpack-cli/blob/master/packages/webpack-cli/CHANGELOG.md> |
+| webpack-dev-server  | <https://github.com/webpack/webpack-dev-server/blob/master/CHANGELOG.md>              |
+
+NPM does have a neat feature to show the latest version of a library. It's the `npm view <package>` command. It shows
+some metadata about a library (well, "package") like the latest version and it's source code link (usually GitHub, of course). 
+
+For example, `npm view lodash` shows:
+
+```text
+lodash@4.17.21 | MIT | deps: none | versions: 114
+Lodash modular utilities.
+https://lodash.com/
+
+keywords: modules, stdlib, util
+
+dist
+.tarball: https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz
+.shasum: 679591c564c3bffaae8454cf0b3df370c3d6911c
+.integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+.unpackedSize: 1.4 MB
+
+maintainers:
+- mathias <mathias@qiwi.be>
+- jdalton <john.david.dalton@gmail.com>
+- bnjmnt4n <benjamin@dev.ofcr.se>
+
+dist-tags:
+latest: 4.17.21
+
+published a year ago by bnjmnt4n <benjamin@dev.ofcr.se>
+```
+
 ## Wish List
 
 General clean ups, ITEMs and things I wish to implement for this project:
