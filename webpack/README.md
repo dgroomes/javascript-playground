@@ -23,7 +23,7 @@ Follow these instructions to build and run the project.
 1. Build the project:
    * `npm run build`
 1. Alternatively, build the project continuously and serve the output:
-   * `npm run start`
+   * `npm start`
    * The project is ready to be viewed in the browser! The browser should open automatically.
 
 ## Webpack Philosophy
@@ -59,7 +59,9 @@ dependency.
 
 | Library                             | Latest releases                                                                        |
 |-------------------------------------|----------------------------------------------------------------------------------------|
+| lodash (a JavaScript library)       | <https://github.com/lodash/lodash/tags>                                                |
 | @types/lodash (via DefinitelyTyped) | I don't know where to find a changelog for this.                                       |
+| RxJS (a TypeScript library)         | <https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md>                           |
 | CSS Loader                          | <https://github.com/webpack-contrib/css-loader/releases>                               |
 | HTML Webpack Plugin                 | <https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md>               |
 | Style Loader                        | <https://github.com/webpack-contrib/style-loader/blob/master/CHANGELOG.md>             |

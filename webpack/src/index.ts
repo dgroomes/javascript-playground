@@ -1,4 +1,5 @@
-import {greeting} from "./greeting";
+import {greeting1, greeting2, greeting3, greeting4} from "./greeting";
+import {asyncScheduler} from "rxjs";
 
 // Reminder: it is normal in webpack-based projects to have unused imports in JavaScript files.
 //
@@ -12,7 +13,13 @@ import {greeting} from "./greeting";
 // web page by way of JavaScript. You don't really need to know how it works, but you'll probably be curious.
 import './style.css';
 
-const greetingEl: Element = document.createElement('div');
-greetingEl.innerHTML = greeting();
+function drawGreeting(greeting: string) {
+    const greetingEl: Element = document.createElement('div');
+    greetingEl.innerHTML = greeting;
+    document.body.appendChild(greetingEl);
+}
 
-document.body.appendChild(greetingEl);
+drawGreeting(greeting1());
+asyncScheduler.schedule(() => drawGreeting(greeting2()), 1000);
+asyncScheduler.schedule(() => drawGreeting(greeting3()), 2000);
+asyncScheduler.schedule(() => drawGreeting(greeting4()), 3000);
