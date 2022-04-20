@@ -1,5 +1,5 @@
 import {greeting1, greeting2, greeting3, greeting4} from "./greeting";
-import {asyncScheduler} from "rxjs";
+import {asyncScheduler} from "./rxjsReexport";
 
 // Reminder: it is normal in webpack-based projects to have unused imports in JavaScript files.
 //
@@ -23,3 +23,9 @@ drawGreeting(greeting1());
 asyncScheduler.schedule(() => drawGreeting(greeting2()), 1000);
 asyncScheduler.schedule(() => drawGreeting(greeting3()), 2000);
 asyncScheduler.schedule(() => drawGreeting(greeting4()), 3000);
+
+try {
+    asyncScheduler.doesNotExist();
+} catch (e) {
+    console.log("As expected, invoking, 'asyncScheduler.doesNotExist();' resulted in an error. The code compiled, but we tricked the TypeScript compiler! Here is the error: " + e)
+}
