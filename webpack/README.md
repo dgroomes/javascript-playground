@@ -106,6 +106,9 @@ General clean ups, ITEMs and things I wish to implement for this project:
 
 * [x] DONE Bug. The source `index.html` file is not actually used.
 * [x] DONE Add CSS. Make sure to use the idiomatic webpack way. 
+* [ ] Consider creating a `webpack/`sub-project in <https://github.com/dgroomes/web-playground> and then removing the HTML
+      and CSS components from the `webpack/` project in `javascript-playground` because after all, it's a playground for
+      JavaScript not necessarily other stuff in the browser like HTML and CSS.
 
 ## Reference 
 
