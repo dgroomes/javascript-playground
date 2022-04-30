@@ -19,6 +19,17 @@ function drawGreeting(greeting: string) {
     document.body.appendChild(greetingEl);
 }
 
+function detectBrowser() {
+    if (typeof globalThis['chrome'] !== 'undefined') {
+        console.log("Detected the 'chrome' global variable. The browser is Chrome.")
+        const loadTimes = chrome.loadTimes();
+        console.log("Load times: ", loadTimes);
+    } else {
+        console.log("Did not find a 'chrome' global variable. The browser is not Chrome.")
+    }
+}
+
+detectBrowser()
 drawGreeting(greeting1());
 asyncScheduler.schedule(() => drawGreeting(greeting2()), 1000);
 asyncScheduler.schedule(() => drawGreeting(greeting3()), 2000);
