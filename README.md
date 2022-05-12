@@ -37,6 +37,12 @@ An intermediate Node/NPM project that uses webpack to build a TypeScript program
 
 See the README in [webpack/](webpack/).
 
+## `redux/`
+
+Learning Redux with a tic-tac-toe example.
+
+See the README in [redux/](redux/).
+
 ## Materials referenced
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)

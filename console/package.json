@@ -1,8 +1,8 @@
 {
-  "name": "javascript-playground",
+  "name": "javascript-playground-console",
   "version": "1.0.0",
-  "repository": "https://github.com/dgroomes/javascript-playground",
   "license": "UNLICENSED",
+  "description": "Example code to print to the console.",
   "dependencies": {
     "draftlog": "^1.0.12"
   }
