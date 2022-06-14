@@ -39,8 +39,6 @@ See the README in [webpack/](webpack/).
 
 ## `npm-library`
 
-NOT YET IMPLEMENTED
-
 An example NPM-based library and an example NPM-based program that consumes it.
 
 See the README in [npm-library/](npm-library/).
