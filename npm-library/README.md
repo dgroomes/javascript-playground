@@ -1,0 +1,38 @@
+# npm-library
+
+NOT YET IMPLEMENTED
+
+An example NPM-based library and an example NPM-based program that consumes it.
+
+## Description
+
+This example project is laid out across two directories:
+
+* `animals-library/`
+  * This directory defines a traditional "library". It is meant to be published to a software registry (NPM) and consumed
+    by other libraries or by a runnable program. The library just lists some animal names. 
+* `forest-program/`
+  * This directory defines a runnable program. It depends on `animals-library` via the NPM `dependencies` block. It
+    tells a short story about animals living in a forest.
+
+Both `animals-library` and `forest-program` are standalone NPM projects. That is, they:
+
+* Define a `package.json`
+* They have their own README and instructions
+* They can be developed independently of each other
+
+In fact, pretend that these projects exist in separate Git repositories and that they are maintained by different people.
+Almost most "*software library* to *software program that depends on the library* relationships" are like that.
+
+The reason this project is important for me is so that I have a runnable reference example of a software library and
+depending software program in the NPM ecosystem. I'd like to create more examples for increasingly sophisticated library
+to consumer relationships like:
+
+* A JavaScript library bundled with Webpack
+* A JavaScript library bundled with Webpack and with multiple entry points
+* A JavaScript library that also contains TypeScript type definitions
+* A TypeScript library compiled with `tsc`
+* A TypeScript library built with `ts-loader` and Webpack
+* ... other TypeScript build toolchains
+* A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
+  consumer program
