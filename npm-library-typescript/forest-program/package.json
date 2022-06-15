@@ -1,0 +1,15 @@
+{
+  "name": "forest-program",
+  "description": "A TypeScript program that tells a short story about animals in a forest",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "animals-library": "file:../animals-library/animals-library-0.1.0.tgz"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}

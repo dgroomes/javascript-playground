@@ -1,0 +1,12 @@
+{
+  "name": "animals-library",
+  "description": "A TypeScript library that lists animal names",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
+}

@@ -43,6 +43,12 @@ An example NPM-based library and an example NPM-based program that consumes it.
 
 See the README in [npm-library/](npm-library/).
 
+## `npm-library-typescript`
+
+An example NPM-based library written in TypeScript and an example NPM-based program written in TypeScript that consumes it.
+
+See the README in [npm-library-typescript/](npm-library-typescript/).
+
 ## Materials referenced
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)

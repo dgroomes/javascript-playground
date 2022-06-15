@@ -20,7 +20,7 @@ Both `animals-library` and `forest-program` are standalone NPM projects. That is
 * They can be developed independently of each other
 
 In fact, pretend that these projects exist in separate Git repositories and that they are maintained by different people.
-Almost most "*software library* to *software program that depends on the library* relationships" are like that.
+Most "software library to consuming software program" relationships are like that.
 
 This project is important to me because it's a runnable reference example of a software library and depending software
 program in the NPM ecosystem. All software toolchains have bespoke implementations and peculiar limitations. Think about
