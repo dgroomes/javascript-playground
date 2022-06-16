@@ -49,7 +49,13 @@ An example NPM-based library written in TypeScript and an example NPM-based prog
 
 See the README in [npm-library-typescript/](npm-library-typescript/).
 
-## Materials referenced
+## `npm-library-webpack`
+
+An example NPM-based library bundled with Webpack and an example NPM-based program that consumes it.
+
+See the README in [npm-library-webpack/](npm-library-webpack/).
+
+## Reference
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 * [MDN web docs: `export` keyword](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export)
