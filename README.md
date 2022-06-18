@@ -49,7 +49,13 @@ An example NPM-based library written in TypeScript and an example NPM-based prog
 
 See the README in [npm-library-typescript/](npm-library-typescript/).
 
-## Materials referenced
+## `npm-library-rollup`
+
+An example NPM-based library bundled with Rollup and an example NPM-based program that consumes it.
+
+See the README in [npm-library-rollup/](npm-library-rollup/).
+
+## Reference
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 * [MDN web docs: `export` keyword](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export)
@@ -59,7 +65,7 @@ See the README in [npm-library-typescript/](npm-library-typescript/).
 * [MDN web docs: Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
 * [nodejs: ECMAScript modules](https://nodejs.org/api/esm.html#esm_enabling)
 * [StackOverflow question and answer: a form of multi-module projects](https://stackoverflow.com/a/29787493)
-
+* [Webpack GitHub issue #2933: *support output.libraryTarget: 'module'*](https://github.com/webpack/webpack/issues/2933)
 
 ## Wish List
    

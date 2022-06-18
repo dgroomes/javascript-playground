@@ -1,0 +1,13 @@
+{
+  "name": "animals-library",
+  "description": "A JavaScript library that lists animal names. The library is bundled with Rollup.",
+  "module": "dist/animals.mjs",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "rollup --config rollup.config.mjs"
+  },
+  "devDependencies": {
+    "rollup": "^2.75.6"
+  }
+}
