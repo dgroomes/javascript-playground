@@ -95,6 +95,7 @@ Finished items:
 * [x] DONE Incorporate the `draw-*.js` JS scripts into the `src/playground.js` runner script or detail the exact instructions to runs
   these JS scripts.
 * [x] DONE A JavaScript library bundled with Rollup
+* [ ] A TypeScript library bundled with Rollup and API Extractor.
   * This was implemented in `../npm-library-rollup/`
 * [ ] Create an example project of: a JavaScript library bundled with Rollup and with multiple entry points (e.g. web
   extensions use multiple entrypoints)
@@ -103,3 +104,7 @@ Finished items:
   * This was implemented in `../npm-library-typescript/`
 * [ ] Create an example project of: A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
   consumer program.
+* [ ] In the many `npm-library*` subprojects, clean up a couple things. Push the `.gitignore` files into the individual
+  projects. For example, push `animals-library-*.tgz` into `npm-library/animals-library`. Also, in the READMEs of the `forest-story`
+  projects, use the `If needed, re-install `animals-library` style (a step) instead of explaining that step outside of
+  the instruction steps.
