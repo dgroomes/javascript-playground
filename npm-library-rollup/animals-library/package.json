@@ -4,6 +4,9 @@
   "module": "dist/animals.mjs",
   "version": "0.1.0",
   "type": "module",
+  "exports": {
+    ".": "./dist/animals.mjs"
+  },
   "scripts": {
     "build": "rollup --config rollup.config.mjs"
   },

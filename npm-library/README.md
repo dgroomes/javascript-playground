@@ -38,3 +38,10 @@ I'd like to create more examples for increasingly sophisticated library-to-consu
 * ... other TypeScript build toolchains
 * [ ] A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
   consumer program
+
+## Wish List
+
+General clean ups, TODOs and things I wish to implement for this project:
+
+* [x] DONE How do you make it so that I can do `import {animals} from 'animals-library'` instead of `import {animals} from 'animals-library/dist/animals.mjs'`?
+  * See [*Subpath exports*](https://nodejs.org/api/packages.html#subpath-exports)

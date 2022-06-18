@@ -3,6 +3,9 @@
   "description": "A TypeScript library that lists animal names",
   "version": "0.1.0",
   "type": "module",
+  "exports": {
+    ".": "./animals.js"
+  },
   "scripts": {
     "build": "tsc"
   },

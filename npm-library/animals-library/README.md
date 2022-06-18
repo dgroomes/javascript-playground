@@ -24,5 +24,9 @@ Follow these instructions to build the `animals-library` distribution:
 
 ## Reference
 
-*  [Blog Post: *Testing npm packages before publishing*](https://medium.com/@vcarl/problems-with-npm-link-and-an-alternative-4dbdd3e66811)
-    *  This blog post makes a good case for the `npm pack` command in favor of `npm link`.
+* [Blog Post: *Testing npm packages before publishing*](https://medium.com/@vcarl/problems-with-npm-link-and-an-alternative-4dbdd3e66811)
+  *  This blog post makes a good case for the `npm pack` command in favor of `npm link`.
+* [Node.js docs: *Modules: Packages*](https://nodejs.org/api/packages.html#modules-packages)
+  * The Node.js docs are rich. They aren't just reference docs but they also have a "guide" feel. I probably would have
+    saved myself a lot of grief just reading these docs instead of jumping straight into things like TypeScript, library
+    development, and especially Webpack.
