@@ -27,17 +27,7 @@ program in the NPM ecosystem. All software toolchains have bespoke implementatio
 Gradle, NPM, Rust/Cargo, Go/GoModules, Python/pip/pipenv/venv, etc. It's impossible to memorize the trivia required to
 build and run software using these toolchains. It's necessary to have understandable reference examples.
 
-I'd like to create more examples for increasingly sophisticated library-to-consumer relationships like:
-
-* [x] DONE A JavaScript library bundled with Rollup
-  * This was implemented in `../npm-library-rollup/` 
-* [ ] A JavaScript library bundled with Rollup and with multiple entry points (e.g. web extensions use multiple entrypoints)
-* [ ] A JavaScript library that also contains TypeScript type definitions
-* [x] DONE A TypeScript library compiled with `tsc`
-  * This was implemented in `../npm-library-typescript/`
-* ... other TypeScript build toolchains
-* [ ] A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
-  consumer program
+I'd like to create more examples for increasingly sophisticated library-to-consumer relationships like.
 
 ## Wish List
 
