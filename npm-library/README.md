@@ -29,11 +29,12 @@ build and run software using these toolchains. It's necessary to have understand
 
 I'd like to create more examples for increasingly sophisticated library-to-consumer relationships like:
 
-* A JavaScript library bundled with Webpack
-* A JavaScript library bundled with Webpack and with multiple entry points (e.g. web extensions use multiple entrypoints)
-* A JavaScript library that also contains TypeScript type definitions
-* A TypeScript library compiled with `tsc`
-* A TypeScript library built with `ts-loader` and Webpack
+* [x] DONE A JavaScript library bundled with Rollup
+  * This was implemented in `../npm-library-rollup/` 
+* [ ] A JavaScript library bundled with Rollup and with multiple entry points (e.g. web extensions use multiple entrypoints)
+* [ ] A JavaScript library that also contains TypeScript type definitions
+* [x] DONE A TypeScript library compiled with `tsc`
+  * This was implemented in `../npm-library-typescript/`
 * ... other TypeScript build toolchains
-* A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
+* [ ] A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
   consumer program
