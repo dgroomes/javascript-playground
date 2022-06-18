@@ -16,7 +16,7 @@ to our local file system using NPM'S `pack` command.
 Follow these instructions to build the `animals-library` distribution:
 
 1. Use NPM version 8.5.5 or later
-2. Build the library distribution:
+2. Package the library distribution:
    * ```shell
      npm pack
      ```

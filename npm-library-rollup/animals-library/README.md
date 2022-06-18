@@ -15,8 +15,8 @@ Follow these instructions to build the `animals-library` distribution:
    * ```shell
      npm run build
      ```
-   * Notice that the file `dist/oanimals.mjs` was created in the current working directory.
-4. Build the library distribution:
+   * Notice that the file `dist/animals.mjs` was created in the current working directory.
+4. Package the library distribution:
    * ```shell
      npm pack
      ```
