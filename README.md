@@ -55,6 +55,12 @@ An example NPM-based library bundled with Rollup and an example NPM-based progra
 
 See the README in [npm-library-rollup/](npm-library-rollup/).
 
+## `npm-library-typescript-rollup-api-extractor/`
+
+An example TypeScript library bundled with Rollup. The types are also bundled with API Extractor into a standalone `index.d.ts`.
+
+See the README in [npm-library-typescript-rollup-api-extractor/](npm-library-typescript-rollup-api-extractor/).
+
 ## Reference
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
@@ -95,7 +101,7 @@ Finished items:
 * [x] DONE Incorporate the `draw-*.js` JS scripts into the `src/playground.js` runner script or detail the exact instructions to runs
   these JS scripts.
 * [x] DONE A JavaScript library bundled with Rollup
-* [ ] A TypeScript library bundled with Rollup and API Extractor.
+* [x] DONE A TypeScript library bundled with Rollup and API Extractor.
   * This was implemented in `../npm-library-rollup/`
 * [ ] Create an example project of: a JavaScript library bundled with Rollup and with multiple entry points (e.g. web
   extensions use multiple entrypoints)
@@ -108,3 +114,8 @@ Finished items:
   projects. For example, push `animals-library-*.tgz` into `npm-library/animals-library`. Also, in the READMEs of the `forest-story`
   projects, use the `If needed, re-install `animals-library` style (a step) instead of explaining that step outside of
   the instruction steps.
+* [ ] Replace the 'I won't repeat the contents of the other README' mentions. This brings too much drag to the cognitive
+  load to the subprojects. Instead, repeat the contents. And better yet, cater the contents to the characteristics of the
+  project. Also, to prevent a Twilight Zone effect of "Wait didn't I just see a 'animals-library', where am I now?" be sure
+  to reference the other projects by name and as "Similar projects with different toolchains".
+* [ ] Include source maps in the `npm-library*` projects.
