@@ -19,11 +19,17 @@ compilation build step.
 Follow these instructions to build and run the project.
 
 1. Install dependencies
-   * `npm install`
+   * ```shell
+     npm install
+     ```
 1. Build the project:
-   * `npm run build`
+   * ```shell
+     npm run build
+     ```
 1. Alternatively, build the project continuously and serve the output:
-   * `npm start`
+   * ```shell
+     npm start
+     ```
    * The project is ready to be viewed in the browser! Open <http://[::1]:8080>.
 
 ## Webpack Philosophy
