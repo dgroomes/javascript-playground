@@ -3,7 +3,16 @@
     "outDir": "transpiled",
     "declaration": true,
     "target": "ES2021",
-    "moduleResolution": "Node"
+    "moduleResolution": "Node",
+    "composite": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [
+    {
+      "path": "./animal-lister/tsconfig.ref.json"
+    },
+    {
+      "path": "./animal-names/tsconfig.ref.json"
+    }
+  ]
 }

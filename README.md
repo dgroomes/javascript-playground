@@ -63,7 +63,7 @@ See the README in [npm-library-typescript-rollup-api-extractor/](npm-library-typ
 
 ## `npm-library-typescript-multi-workspace-rollup-api-extractor/`
 
-An example npm-based multi-workspace TypeScript library bundled with Rollup. The types are also bundled with API Extractor into a standalone `index.d.ts`.
+An example npm-based multi-workspace TypeScript library bundled with Rollup. It uses TypeScript project references. The types are also bundled with API Extractor into a standalone `index.d.ts`.
 
 See the README in [npm-library-typescript-multi-workspace-rollup-api-extractor/](npm-library-typescript-multi-workspace-rollup-api-extractor/).
 

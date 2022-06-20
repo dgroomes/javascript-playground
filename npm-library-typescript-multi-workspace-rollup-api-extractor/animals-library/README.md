@@ -17,19 +17,29 @@ an uber artifact (e.g. a "fat jar") (again not sure this is a good idea).
 
 Follow these instructions to build the program distribution:
 
-1. Pre-work
-    * You need to build `animal-lister` first. Follow the instructions in the README of that project. Note: there has to
-      be a way to express "please build the whole multi-workspace project" in one command. I'm hoping this is possible.
-2. Use npm version 8.5.5 or later
-3. Install the dependencies:
+1. Use npm version 8.5.5 or later
+2. Install the dependencies:
     * ```shell
       npm install
       ```
-4. Transpile the TypeScript source code:
+3. Transpile the TypeScript source code across all workspaces:
     * ```shell
       npm run transpile
       ```
-5. Bundle the JavaScript code:
+    * This will error with `animal-lister/src/index.ts:1:23 - error TS2307: Cannot find module '@dgroomes/animal-names' or its corresponding type declarations.`
+    * This is an order-of-operations problem. The `animal-lister` package depends on the program distribution from the
+      `animal-names` package but it hasn't been built yet. If you execute the transpilation one work time, it will work.
+      Execute the following command for the second time now:
+    * ```shell
+      npm run transpile
+      ```
+    * **Monorepo Warning**: this project design is pushing npm and the TypeScript toolchain beyond what they are comfortable doing. It
+      was good for me to learn this. My final conclusion is: "Do not mix the multi-module capabilities of different toolchains".
+      TypeScript's version of multi-module projects is 'Project References'. npm's version of multi-module projects is
+      'npm workspaces'. When designing your own project, choose one, or the other, or look for different toolchains altogether.
+      Monorepo tooling is a big topic right now. Research some alternatives. Don't be afraid to just "say no" until an
+      ergonomic and maintainable option is invented.
+4. Bundle the JavaScript code:
     * ```shell
       npm run bundle-js
       ```

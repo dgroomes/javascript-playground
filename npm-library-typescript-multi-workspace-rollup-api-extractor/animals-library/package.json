@@ -10,7 +10,7 @@
   },
   "files": ["dist", "README.md"],
   "scripts": {
-    "transpile": "tsc",
+    "transpile": "tsc --build",
     "bundle-js": "rollup --config rollup.config.mjs",
     "bundle-types": "api-extractor run --local"
   },

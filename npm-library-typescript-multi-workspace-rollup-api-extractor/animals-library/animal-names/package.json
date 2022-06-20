@@ -4,10 +4,10 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "types": "dist/index.d.ts",
-  "module": "dist/index.js",
+  "types": "dist/src/index.d.ts",
+  "module": "dist/src/index.js",
   "exports": {
-    ".": "./dist/index.js"
+    ".": "./dist/src/index.js"
   },
   "scripts": {
     "transpile": "tsc"

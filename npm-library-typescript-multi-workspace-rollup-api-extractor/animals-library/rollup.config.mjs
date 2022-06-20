@@ -1,7 +1,7 @@
 import {nodeResolve} from '@rollup/plugin-node-resolve'
 
 export default {
-    input: 'transpiled/index.js',
+    input: 'transpiled/src/index.js',
     output: {
         file: 'dist/index.mjs',
         format: 'esm'
