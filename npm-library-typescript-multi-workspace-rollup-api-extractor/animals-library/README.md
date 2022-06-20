@@ -26,19 +26,6 @@ Follow these instructions to build the program distribution:
     * ```shell
       npm run transpile
       ```
-    * This will error with `animal-lister/src/index.ts:1:23 - error TS2307: Cannot find module '@dgroomes/animal-names' or its corresponding type declarations.`
-    * This is an order-of-operations problem. The `animal-lister` package depends on the program distribution from the
-      `animal-names` package but it hasn't been built yet. If you execute the transpilation one work time, it will work.
-      Execute the following command for the second time now:
-    * ```shell
-      npm run transpile
-      ```
-    * **Monorepo Warning**: this project design is pushing npm and the TypeScript toolchain beyond what they are comfortable doing. It
-      was good for me to learn this. My final conclusion is: "Do not mix the multi-module capabilities of different toolchains".
-      TypeScript's version of multi-module projects is 'Project References'. npm's version of multi-module projects is
-      'npm workspaces'. When designing your own project, choose one, or the other, or look for different toolchains altogether.
-      Monorepo tooling is a big topic right now. Research some alternatives. Don't be afraid to just "say no" until an
-      ergonomic and maintainable option is invented.
 4. Bundle the JavaScript code:
     * ```shell
       npm run bundle-js

@@ -7,12 +7,15 @@
     "composite": true
   },
   "include": ["src"],
+  // The order of elements in the 'references' array matters. The TypeScript code in 'animal-lister' uses code from the
+  // 'animal-names' package. So, the 'animal-names' package should be transpiled before 'animal-lister'. We can guarantee
+  // that by declaring './animal-names/tsconfig.ref.json' before './animal-lister/tsconfig.ref.json'.
   "references": [
     {
-      "path": "./animal-lister/tsconfig.ref.json"
+      "path": "./animal-names/tsconfig.ref.json"
     },
     {
-      "path": "./animal-names/tsconfig.ref.json"
+      "path": "./animal-lister/tsconfig.ref.json"
     }
   ]
 }
