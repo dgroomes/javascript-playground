@@ -61,6 +61,12 @@ An example TypeScript library bundled with Rollup. The types are also bundled wi
 
 See the README in [npm-library-typescript-rollup-api-extractor/](npm-library-typescript-rollup-api-extractor/).
 
+## `npm-library-typescript-multi-workspace-rollup-api-extractor/`
+
+An example npm-based multi-workspace TypeScript library bundled with Rollup. The types are also bundled with API Extractor into a standalone `index.d.ts`.
+
+See the README in [npm-library-typescript-multi-workspace-rollup-api-extractor/](npm-library-typescript-multi-workspace-rollup-api-extractor/).
+
 ## Reference
 
 * [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)

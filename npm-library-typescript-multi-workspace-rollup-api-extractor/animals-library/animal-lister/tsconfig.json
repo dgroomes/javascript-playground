@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "transpiled",
+    "declaration": true,
+    "target": "ES2021",
+    "moduleResolution": "Node"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@dgroomes/animal-names",
+  "description": "A static list of animal names.",
+  "private": true,
+  "type": "module",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "transpile": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
+}
