@@ -10,6 +10,6 @@
     "typescript": "^4.7.4"
   },
   "dependencies": {
-    "@dgroomes/animal-lister": "file:../animals-library/animal-lister/dgroomes-animal-lister-0.1.0.tgz"
+    "@dgroomes/animals-library": "file:../animals-library/dgroomes-animals-library-0.1.0.tgz"
   }
 }

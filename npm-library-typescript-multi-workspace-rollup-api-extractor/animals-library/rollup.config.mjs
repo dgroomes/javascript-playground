@@ -11,9 +11,10 @@ export default {
     //
     // Specifically, this has the effect of bundling the code from 'animal-names'.
     //
-    // 'animal-lister' needs to be published as one package without any dependencies. This makes for a good development
+    // 'animals-library' needs to be published as one package without any dependencies. This makes for a good development
     // experience for consuming applications, like 'forest-program'. Why should 'forest-program' have any knowledge of
-    // the internal project structure of 'animal-lister'? Should 'forest-program' need to know that 'animal-lister' depends
-    // on 'animal-names'? No. 'animal-lister' should appear as its own thing with no other dependencies.
+    // the internal project structure of 'animal-library'? Should 'forest-program' need to know that 'animals-library' depends
+    // on 'animal-names' and 'animal-lister'? No. 'animal-names' and 'animal-lister' should appear as their own thing
+    // with no other dependencies.
     plugins: [nodeResolve()]
 }

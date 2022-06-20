@@ -1,4 +1,4 @@
-import {listAnimals} from "@dgroomes/animal-lister"
+import {listAnimals} from "@dgroomes/animals-library"
 
 console.log("\nThis is a story about animals in the forest...")
 
