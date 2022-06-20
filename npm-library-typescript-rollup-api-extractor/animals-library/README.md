@@ -26,7 +26,7 @@ Follow these instructions to build the `animals-library` distribution:
    * Notice that the file `dist/index.mjs` was created. This is the final bundled JavaScript that will be consumed
      by programs depending on `animals-library`. But, for consuming programs written in TypeScript, we need to also offer
      type definitions that describe the bundled JavaScript. See the next step.
-* Bundle the TypeScript declaration file
+* Bundle the TypeScript declarations:
   * ```shell
     npm run bundle-types
     ```

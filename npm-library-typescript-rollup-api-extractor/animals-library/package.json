@@ -13,8 +13,8 @@
   },
   "scripts": {
     "transpile": "tsc",
-    "bundle-types": "api-extractor run --local",
-    "bundle-js": "rollup --config rollup.config.mjs"
+    "bundle-js": "rollup --config rollup.config.mjs",
+    "bundle-types": "api-extractor run --local"
   },
   "devDependencies": {
     "@microsoft/api-extractor": "^7.25.2",

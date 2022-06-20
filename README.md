@@ -77,15 +77,26 @@ See the README in [npm-library-typescript-rollup-api-extractor/](npm-library-typ
    
 General clean ups, TODOs and things I wish to implement for this project:
 
-* Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
+* [ ] Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
   a `index.html` and no other files) is killer. For a few reasons. For one, it's the only way to run JavaScript in the
   browser from a file (although I think browser vendors are experimenting with other sandboxed options I think...). Running
   code from a file is the most approachable way for a new developer. Makes the project approachable. The second reason
   is that I think a single document is easier to grok than a program with multiple sources (I didn't articulate this very
   well, but I mean it).
-* Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
+* [ ] Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
+* [ ] Lowercase "npm". npm is stylized as "npm" not "NPM".
+* [ ] In the many `npm-library*` subprojects, clean up a couple things. Push the `.gitignore` files into the individual
+  projects. For example, push `animals-library-*.tgz` into `npm-library/animals-library`. Also, in the READMEs of the `forest-story`
+  projects, use the `If needed, re-install `animals-library` style (a step) instead of explaining that step outside of
+  the instruction steps.
+* [ ] Replace the 'I won't repeat the contents of the other README' mentions. This brings too much drag to the cognitive
+  load to the subprojects. Instead, repeat the contents. And better yet, cater the contents to the characteristics of the
+  project. Also, to prevent a Twilight Zone effect of "Wait didn't I just see a 'animals-library', where am I now?" be sure
+  to reference the other projects by name and as "Similar projects with different toolchains".
+* [ ] Include source maps in the `npm-library*` projects.
+* [ ] Create an example project of: a JavaScript library that also contains TypeScript type definitions
 
-Finished items:
+### Finished Items
 
 * [x] DONE Parse commandline arguments passed to Node
 * [x] DONE Node has some fancy console logging features in its standard libraries, like the `console.table` function. Is there
@@ -103,19 +114,7 @@ Finished items:
 * [x] DONE A JavaScript library bundled with Rollup
 * [x] DONE A TypeScript library bundled with Rollup and API Extractor.
   * This was implemented in `../npm-library-rollup/`
-* [ ] Create an example project of: a JavaScript library bundled with Rollup and with multiple entry points (e.g. web
-  extensions use multiple entrypoints)
-* [ ] Create an example project of: a JavaScript library that also contains TypeScript type definitions
 * [x] DONE Create an example project of: a TypeScript library compiled with `tsc`
   * This was implemented in `../npm-library-typescript/`
-* [ ] Create an example project of: A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
+* [x] DONE Create an example project of: A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
   consumer program.
-* [ ] In the many `npm-library*` subprojects, clean up a couple things. Push the `.gitignore` files into the individual
-  projects. For example, push `animals-library-*.tgz` into `npm-library/animals-library`. Also, in the READMEs of the `forest-story`
-  projects, use the `If needed, re-install `animals-library` style (a step) instead of explaining that step outside of
-  the instruction steps.
-* [ ] Replace the 'I won't repeat the contents of the other README' mentions. This brings too much drag to the cognitive
-  load to the subprojects. Instead, repeat the contents. And better yet, cater the contents to the characteristics of the
-  project. Also, to prevent a Twilight Zone effect of "Wait didn't I just see a 'animals-library', where am I now?" be sure
-  to reference the other projects by name and as "Similar projects with different toolchains".
-* [ ] Include source maps in the `npm-library*` projects.
