@@ -44,11 +44,25 @@ function highlight(phrase, keyword) {
  * @return {string} the same phrase but with the keywords highlighted using asterisks.
  */
 function highlightMultiple(phrase, keywords) {
-    // todo
-    // const splits = phrase.split(keyword);
-    // splits.map(s => )
-    // return splits.join("*" + keyword + "*");
-    return phrase;
+    // "Defensive copy" the array. The original array can't be shared across different function executions because
+    // each execution will 'pop()' the array. We don't want to side-effect an object shared across contexts.
+    const keywordsSafe = keywords.slice();
+    const keyword = keywordsSafe.pop();
+    let sections = phrase.split(keyword);
+
+    if (keywordsSafe.length > 0) {
+        sections = sections.map(s => highlightMultiple(s, keywordsSafe));
+    } else {
+        // This is the "bottom out" point for the recursive algorithm. There is no more highlighting work to do because
+        // we've processed all the keywords for highlighting.
+    }
+
+    if (sections.length === 1) {
+        // There was no match for the keyword. Return the original phrase.
+        return phrase;
+    } else {
+        return sections.join("*" + keyword + "*");
+    }
 }
 
 
