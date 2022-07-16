@@ -31,6 +31,12 @@ Example usages of the NodeJS file APIs.
 
 See the README in [file/](file/).
 
+## `misc/`
+
+Miscellaneous JavaScript code. Learning by doing.
+
+See the README in [misc/](misc/).
+
 ## `webpack/`
 
 An intermediate Node/NPM project that uses webpack to build a TypeScript program.
