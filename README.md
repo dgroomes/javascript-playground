@@ -37,7 +37,7 @@ See the README in [object-oriented/](object-oriented/).
 
 ## `file/`
 
-Example usages of the NodeJS file APIs.
+Reading, decoding and writing files in NodeJS.
 
 See the README in [file/](file/).
 
