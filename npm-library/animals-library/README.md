@@ -2,25 +2,29 @@
 
 A JavaScript library that lists animal names.
 
-## Description
 
-This is an NPM-based JavaScript library that lists animal names and the type of environment (e.g. "forest", "rainforest")
+## Overview
+
+This is an npm-based JavaScript library that lists animal names and the type of environment (e.g. "forest", "rainforest")
 the animals are found in. This library is written using ECMAScript modules. Read about [Node.js support for ECMAScript modules in the Node.js docs](https://nodejs.org/api/esm.html).
 
-Usually, NPM-based libraries are published to the NPM registry available on the public internet. However, for this
+Usually, npm-based libraries are published to the npm registry available on the public internet. However, for this
 example project we don't need to reach so far and instead we can publish (in a sense) the `animals-library` distribution
-to our local file system using NPM'S `pack` command.
+to our local file system using npm's `pack` command.
+
 
 ## Instructions
 
 Follow these instructions to build the `animals-library` distribution:
 
-1. Use NPM version 8.5.5 or later
+1. Pre-requisite: npm
+   * I used npm version 8.19.2
 2. Package the library distribution:
    * ```shell
      npm pack
      ```
    * Notice that the file `animals-library-0.1.0.tgz` was created in the current working directory.
+
 
 ## Reference
 
