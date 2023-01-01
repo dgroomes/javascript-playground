@@ -2,7 +2,8 @@
 
 Print dynamic content to the console with `readline` and DraftLog.
 
-## Description
+
+## Overview
 
 Writing this playground repository helped me learn:
 
@@ -12,9 +13,16 @@ Writing this playground repository helped me learn:
   >
   >  -- <cite>https://github.com/ivanseidel/node-draftlog</cite>
 
+
 ## Instructions
 
+Follow these instructions to run the example program.
+
 1. Install dependencies:
-   * `npm install`
-1. Run the examples:
-   * `./runner.js`
+   * ```shell
+     npm install
+     ```
+2. Run the examples:
+   * ```shell
+     ./runner.js
+     ```

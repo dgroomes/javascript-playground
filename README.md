@@ -2,7 +2,14 @@
 
 📚 Learning and exploring JavaScript.
 
+
+## Overview
+
+This repository is my own exploration of JavaScript (JS) and the JavaScript ecosystem. It codifies some of the JS
+concepts and trivia I've learned into runnable example programs, complete with verbose commentary and references.
+
 **NOTE**: This project was developed on macOS. It is for my own personal use.
+
 
 ## Standalone sub-projects
 
@@ -13,11 +20,13 @@ re-using the code.
 
 The sub-projects include:
 
+
 ## `console/`
 
 Print dynamic content to the console with `readline` and DraftLog.
 
 See the README in [console/](console/). 
+
 
 ## `object-oriented/`
 
@@ -25,11 +34,13 @@ Showcasing object-oriented language features of JavaScript.
 
 See the README in [object-oriented/](object-oriented/). 
 
+
 ## `file/`
 
 Example usages of the NodeJS file APIs.
 
 See the README in [file/](file/).
+
 
 ## `misc/`
 
@@ -37,11 +48,13 @@ Miscellaneous JavaScript code. Learning by doing.
 
 See the README in [misc/](misc/).
 
+
 ## `webpack/`
 
 An intermediate Node/NPM project that uses webpack to build a TypeScript program.
 
 See the README in [webpack/](webpack/).
+
 
 ## `npm-library/`
 
@@ -49,11 +62,13 @@ An example NPM-based library and an example NPM-based program that consumes it.
 
 See the README in [npm-library/](npm-library/).
 
+
 ## `npm-library-typescript/`
 
 An example NPM-based library written in TypeScript and an example NPM-based program written in TypeScript that consumes it.
 
 See the README in [npm-library-typescript/](npm-library-typescript/).
+
 
 ## `npm-library-rollup/`
 
@@ -61,17 +76,20 @@ An example NPM-based library bundled with Rollup and an example NPM-based progra
 
 See the README in [npm-library-rollup/](npm-library-rollup/).
 
+
 ## `npm-library-typescript-rollup-api-extractor/`
 
 An example TypeScript library bundled with Rollup. The types are also bundled with API Extractor into a standalone `index.d.ts`.
 
 See the README in [npm-library-typescript-rollup-api-extractor/](npm-library-typescript-rollup-api-extractor/).
 
+
 ## `npm-library-typescript-multi-workspace-rollup-api-extractor/`
 
 An example npm-based multi-workspace TypeScript library bundled with Rollup. It uses TypeScript project references. The types are also bundled with API Extractor into a standalone `index.d.ts`.
 
 See the README in [npm-library-typescript-multi-workspace-rollup-api-extractor/](npm-library-typescript-multi-workspace-rollup-api-extractor/).
+
 
 ## Reference
 
@@ -84,6 +102,7 @@ See the README in [npm-library-typescript-multi-workspace-rollup-api-extractor/]
 * [nodejs: ECMAScript modules](https://nodejs.org/api/esm.html#esm_enabling)
 * [StackOverflow question and answer: a form of multi-module projects](https://stackoverflow.com/a/29787493)
 * [Webpack GitHub issue #2933: *support output.libraryTarget: 'module'*](https://github.com/webpack/webpack/issues/2933)
+
 
 ## Wish List
    
@@ -107,6 +126,8 @@ General clean ups, TODOs and things I wish to implement for this project:
   to reference the other projects by name and as "Similar projects with different toolchains".
 * [ ] Include source maps in the `npm-library*` projects.
 * [ ] Create an example project of: a JavaScript library that also contains TypeScript type definitions
+* [ ] IN PROGRESS 2023 upgrades.
+
 
 ### Finished Items
 
