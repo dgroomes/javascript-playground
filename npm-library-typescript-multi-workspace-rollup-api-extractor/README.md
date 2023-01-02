@@ -2,8 +2,16 @@
 
 An example npm-based multi-workspace TypeScript library bundled with Rollup. It uses TypeScript project references. The types are also bundled with API Extractor into a standalone `index.d.ts`.
 
----
-**Monorepo Warning**
+
+## Description
+
+I want a working example of a multi-workspace TypeScript project. I'm following the great example of this [2ality blog post: *Simple monorepos via npm workspaces and TypeScript project references*](https://2ality.com/2021/07/simple-monorepos.html).
+The project defined in the `animals-library/` directory is a multi-workspace project that produces a library artifact.
+The project defined in `forest-program/` is a runnable program that consumes the library. Make sure to read the README
+in each of those projects.
+
+
+## Monorepo Warning ⚠️
 
 I wouldn't recommend the project design pattern implemented here. 
 
@@ -21,13 +29,6 @@ Implementing this project was a good exercise, however. My final conclusion is:
 > altogether. Monorepo tooling is a big topic right now. Research some alternatives. Don't be afraid to just "say no"
 > until an ergonomic and maintainable option is invented.
 
----
-
-
-## Description
-
-I want a working example of a multi-workspace TypeScript project. I'm following the great example of this [2ality blog post: *Simple monorepos via npm workspaces and TypeScript project references*](https://2ality.com/2021/07/simple-monorepos.html).
-
 
 ## Wish List
 
@@ -42,6 +43,7 @@ General clean ups, TODOs and things I wish to implement for this project:
   this is similar to how it was implemented in the 2ality blog post. But it's awkward because "source" by definition is
   not the distribution artifact if the source code compiled into something else.
 
-## References
+
+## Reference
 
 * [TypeScript docs: *Project References*](https://www.typescriptlang.org/docs/handbook/project-references.html)
