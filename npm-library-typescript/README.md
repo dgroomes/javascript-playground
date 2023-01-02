@@ -1,8 +1,9 @@
 # npm-library-typescript
 
-An example NPM-based library written in TypeScript and an example NPM-based program written in TypeScript that consumes it.
+An example npm-based library written in TypeScript and an example npm-based program written in TypeScript that consumes it.
 
-## Description
+
+## Overview
 
 This example project is a translation of the `../npm-libary/` project but instead of JavaScript, TypeScript is used.
 I won't repeat the same README content that was already written in `../npm-library`. Please study the README in that project
