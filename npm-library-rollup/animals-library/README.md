@@ -2,25 +2,30 @@
 
 A JavaScript library that lists animal names. The library is bundled with Rollup.
 
+
 ## Instructions
 
-Follow these instructions to build the `animals-library` distribution:
+Follow these instructions to build the `animals-library` distribution.
 
-1. Use NPM version 8.5.5 or later
-2. Install the dependencies:
+1. Pre-requisite: npm
+   * I used npm version 8.19.2
+2. Pre-requisite: Node.js
+   * I used version 18.12.1
+3. Install the dependencies:
     * ```shell
       npm install
       ```
-3. Bundle the code:
+4. Bundle the code:
    * ```shell
      npm run build
      ```
    * Notice that the file `dist/animals.mjs` was created in the current working directory.
-4. Package the library distribution:
+5. Package the library distribution:
    * ```shell
      npm pack
      ```
    * Notice that the file `animals-library-0.1.0.tgz` was created in the current working directory.
+
 
 ## Reference
 

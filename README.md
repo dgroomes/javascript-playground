@@ -72,7 +72,7 @@ See the README in [npm-library-typescript/](npm-library-typescript/).
 
 ## `npm-library-rollup/`
 
-An example NPM-based library bundled with Rollup and an example NPM-based program that consumes it.
+An example npm-based library bundled with Rollup and an example npm-based program that consumes it.
 
 See the README in [npm-library-rollup/](npm-library-rollup/).
 
