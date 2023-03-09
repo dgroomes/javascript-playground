@@ -35,6 +35,13 @@ Showcasing object-oriented language features of JavaScript.
 See the README in [object-oriented/](object-oriented/). 
 
 
+## `async/`
+
+Showcasing asynchronous programming features of JavaScript.
+
+See the README in [async/](async/).
+
+
 ## `file/`
 
 Reading, decoding and writing files in NodeJS.
@@ -114,7 +121,8 @@ General clean ups, TODOs and things I wish to implement for this project:
   code from a file is the most approachable way for a new developer. Makes the project approachable. The second reason
   is that I think a single document is easier to grok than a program with multiple sources (I didn't articulate this very
   well, but I mean it).
-* [ ] Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
+* [x] DONE Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
+* [ ] Do something with generators.
 * [ ] Lowercase "npm". npm is stylized as "npm" not "NPM".
 * [ ] In the many `npm-library*` subprojects, clean up a couple things. Push the `.gitignore` files into the individual
   projects. For example, push `animals-library-*.tgz` into `npm-library/animals-library`. Also, in the READMEs of the `forest-story`
