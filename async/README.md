@@ -1,6 +1,6 @@
 # async
 
-Showcasing asynchronous programming features of JavaScript.
+Showcasing the asynchronous programming features of JavaScript.
 
 
 ## Overview
@@ -8,8 +8,9 @@ Showcasing asynchronous programming features of JavaScript.
 JavaScript has a rich set of options when it comes to asynchronous programming. This project is a collection of examples
 that show how to use these features.
 
-There are three sample programs that do an asynchronous "sleep" operation but in three different styles. Read the code
-and the comments carefully and then follow the instructions below to run the programs. 
+There are four sample programs that print messages interspersed with asynchronous "sleep" operations. Each program has
+the exact same output but is implemented in a unique style. Read the code and the comments carefully and then follow the
+instructions below to run the programs. 
 
 
 ## Instructions
@@ -17,22 +18,26 @@ and the comments carefully and then follow the instructions below to run the pro
 Follow these instructions to run the example programs.
 
 1. Pre-requisite: Node.js
-   * I used version 18.12.1
+    * I used version 18.12.1
 2. Run the traditional callback-based program:
-   * ```shell
-     node timeout-with-callbacks.js
-     ```
+    * ```shell
+      node timeout-with-callbacks.js
+      ```
 3. Next, run the promise-based program:
-   * ```shell
-     node timeout-with-promises.js
-     ```
-4. Finally, run the async/await-based program:
-   * ```shell
-     node timeout-with-async-await.js
-     ```
-5. Experiment!
-   * Change the code, re-run the programs, and think critically so you can learn these JavaScript features "in your
-     bones".
+    * ```shell
+      node timeout-with-promises.js
+      ```
+4. Next, run the generator-based program:
+    * ```shell
+      node timeout-with-generators.js
+      ```
+5. Finally, run the async/await-based program:
+    * ```shell
+      node timeout-with-async-await.js
+      ```
+6. Experiment!
+    * Change the code, re-run the programs, and think critically so you can learn these JavaScript features "in your
+      bones".
 
 
 ## Reference

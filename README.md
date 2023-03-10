@@ -30,14 +30,14 @@ See the README in [console/](console/).
 
 ## `object-oriented/`
 
-Showcasing object-oriented language features of JavaScript.
+Showcasing the object-oriented language features of JavaScript.
 
 See the README in [object-oriented/](object-oriented/). 
 
 
 ## `async/`
 
-Showcasing asynchronous programming features of JavaScript.
+Showcasing the asynchronous programming features of JavaScript.
 
 See the README in [async/](async/).
 
@@ -122,7 +122,7 @@ General clean ups, TODOs and things I wish to implement for this project:
   is that I think a single document is easier to grok than a program with multiple sources (I didn't articulate this very
   well, but I mean it).
 * [x] DONE Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
-* [ ] Do something with generators.
+* [x] DONE Implement an async program with generators.
 * [ ] Lowercase "npm". npm is stylized as "npm" not "NPM".
 * [ ] In the many `npm-library*` subprojects, clean up a couple things. Push the `.gitignore` files into the individual
   projects. For example, push `animals-library-*.tgz` into `npm-library/animals-library`. Also, in the READMEs of the `forest-story`

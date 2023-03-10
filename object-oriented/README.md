@@ -1,6 +1,6 @@
 # object-oriented
 
-Showcasing object-oriented language features of JavaScript.
+Showcasing the object-oriented language features of JavaScript.
 
 ## Instructions
 
