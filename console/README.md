@@ -22,7 +22,14 @@ Follow these instructions to run the example program.
    * ```shell
      npm install
      ```
-2. Run the examples:
+2. Run the example program:
    * ```shell
-     ./runner.js
+     ./runner.mjs
      ```
+
+
+## Wish List
+
+General clean ups, TODOs and things I wish to implement for this project:
+
+* [x] DONE Stop using `require`. I think I can be completely done with CommonJS.

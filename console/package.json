@@ -2,6 +2,7 @@
   "name": "javascript-playground-console",
   "version": "1.0.0",
   "license": "UNLICENSED",
+  "type": "module",
   "description": "Example code to print to the console.",
   "dependencies": {
     "draftlog": "^1.0.13"

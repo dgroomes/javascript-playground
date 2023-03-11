@@ -135,6 +135,7 @@ General clean ups, TODOs and things I wish to implement for this project:
 * [ ] Include source maps in the `npm-library*` projects.
 * [ ] Create an example project of: a JavaScript library that also contains TypeScript type definitions
 * [ ] IN PROGRESS 2023 upgrades.
+* [ ] Stop using `require`. I think I can be completely done with CommonJS.
 
 
 ### Finished Items

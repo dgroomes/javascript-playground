@@ -1,4 +1,4 @@
-const DraftLog = require('draftlog')
+import DraftLog from "draftlog";
 DraftLog(console)
 
 /**
@@ -6,7 +6,7 @@ DraftLog(console)
  * exclamation points (!) over a period of time.
  * @return {Promise<void>} a Promise that resolves when the drawing has finished
  */
-function drawMessageMultiline(message) {
+export function drawMessageMultiline(message) {
     return new Promise((resolve, _) => {
         const draft = console.draft(message)
         const limit = 5
@@ -24,5 +24,3 @@ function drawMessageMultiline(message) {
         }, 1000)
     })
 }
-
-module.exports = {drawMessageMultiline}
