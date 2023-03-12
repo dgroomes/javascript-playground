@@ -15,7 +15,7 @@ Follow these instructions to run the example program.
 
 1. Run the program
   * ```shell
-    ./file.js
+    ./file.mjs
     ```
 1. Inspect the output
   * The files `copy-of-README.md` and `copy-of-with-substitutions-README.md` should be created in the current directory.
@@ -29,5 +29,5 @@ General clean ups, TODOs and things I wish to implement for this project:
 * [x] DONE Can a file be read chunk by chunk?
 * [x] DONE Copy a file using a read and write stream and substitute placeholders with other values.
   This is a templating pattern.
-* [ ] Be done with CommonJS. No more `require`. Please use ES6 modules and the `import` keyword. We're at the point where
+* [x] DONE Be done with CommonJS. No more `require`. Please use ES6 modules and the `import` keyword. We're at the point where
   I don't need CommonJS example code.

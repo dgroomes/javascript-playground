@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
+import {createReadStream, createWriteStream, readFileSync} from "fs";
+
 // Read a file
 {
-    const {readFileSync} = require('fs')
     let file = 'README.md';
     console.log(`Reading file synchronously: ${file}...`)
     let buffer = readFileSync(file)
@@ -14,7 +15,6 @@
 // After this code executes, you should see the file 'copy-of-README.md' appear which is a content copy of the file
 // 'README.md'.
 {
-    const {createReadStream, createWriteStream} = require('fs')
     let sourceFile = 'README.md';
     let targetFile = 'copy-of-README.md';
     console.log(`Copying the file '${sourceFile}' asynchronously to '${targetFile}' using read and write streams...`)
@@ -37,7 +37,6 @@
 // * 'IN PROGRESS' is replaced with 'STARTED'
 // * 'DONE' is replaced with 'FINISHED'
 {
-    const {createReadStream, createWriteStream} = require('fs')
     let sourceFile = 'README.md';
     let targetFile = 'copy-of-with-substitutions-README.md';
     console.log(`Copying the file '${sourceFile}' asynchronously to '${targetFile}' using read and write streams...`)
