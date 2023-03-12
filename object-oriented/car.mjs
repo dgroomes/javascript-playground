@@ -1,7 +1,7 @@
 /**
  * A simple class.
  */
-class Car {
+export class Car {
 
     constructor() {
         // For observability, let's keep track of the number of times the "noise" method has been called
@@ -25,5 +25,3 @@ class Car {
         return "honk"
     }
 }
-
-module.exports = {Car}

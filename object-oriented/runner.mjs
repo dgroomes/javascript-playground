@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 
-/**
- * A basic example that showcases JavaScript classes (introduced in "ECMAScript 2015" a.k.a. ES6)
- */
-{
-    let {Car} = require('./car')
-    let {Truck} = require('./truck')
+/*
+A basic example that showcases JavaScript classes (introduced in "ECMAScript 2015" a.k.a. ES6)
+*/
 
+import {Car} from "./car.mjs"
+import {Truck} from "./truck.mjs"
+import {TruckV2} from "./truck-v2.mjs"
+import {Evasive, EvasiveSubclass} from "./evasive.mjs"
+
+{
     let myCar = new Car()
     myCar.describe()
     myCar.describe()
@@ -30,8 +33,6 @@
  * Modeled after https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy
  */
 {
-    let {Truck} = require('./truck')
-
     let myTruck = new Truck()
     let counter = 0
     let handler = {
@@ -54,8 +55,6 @@
  * Showcasing my `TrackV2` and by extension my `ProxiedCar` classes
  */
 {
-    let {TruckV2} = require('./truck-v2')
-
     let myTruckV2 = new TruckV2()
     myTruckV2.describe()
     myTruckV2.describe()
@@ -67,10 +66,8 @@
  * Showcasing my `Evasive` class
  */
 {
-    let {Evasive, EvasiveSubclass} = require('./evasive')
-
     let evasive = new Evasive()
-    console.log(`evasive.constructor.name: ${evasive.constructor.name}`) // wow, it's an Array and not an instace of Evasive!
+    console.log(`evasive.constructor.name: ${evasive.constructor.name}`) // wow, it's an Array and not an instance of Evasive!
     let evasiveSubclass = new EvasiveSubclass()
     console.log(`evasiveSubclass.constructor.name: ${evasiveSubclass.constructor.name}`) // ?
     console.log("")

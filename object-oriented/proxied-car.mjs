@@ -1,13 +1,13 @@
-let {Car} = require('./car')
+import {Car} from "./car.mjs"
 
 /**
  * Enabling a proxy in a class hierarchy by using (exploiting?) a feature of constructors.
  *
- * This one goes in the "JavaScript is wild but fun" category. See `evasive.js` for an example of the aforementioned
+ * This one goes in the "JavaScript is wild but fun" category. See `evasive.mjs` for an example of the aforementioned
  * constructor feature that lets us replace the normal return value from a `new MyClass() invocation and instead return
- * an object of own choosing. In this class, we use this feature to return a proxy of the class instance.
+ * an object of our own choosing. In this class, we use this feature to return a proxy of the class instance.
  */
-class ProxiedCar extends Car {
+export class ProxiedCar extends Car {
 
     constructor() {
         super();
@@ -25,5 +25,3 @@ class ProxiedCar extends Car {
         return new Proxy(this, handler)
     }
 }
-
-module.exports = {ProxiedCar}

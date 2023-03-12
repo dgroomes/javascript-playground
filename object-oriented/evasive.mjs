@@ -3,9 +3,13 @@
  *
  * Reference https://stackoverflow.com/questions/3350215/what-is-returned-from-a-constructor
  */
-class Evasive {
+export class Evasive {
     constructor() {
         console.log("[Evasive] Hello from the constructor")
+
+        // For visual effect, I'm using the Array function directly as a constructor. Normally, you would use the array
+        // literal syntax to create an array.
+        // noinspection JSPrimitiveTypeWrapperUsage
         return new Array(1,2,3)
     }
 }
@@ -13,13 +17,11 @@ class Evasive {
 /**
  * Is a sub-class of an "evasive" super class affected by the constructor return value?
  *
- * Answer: Yes. When the sub-class is instantiated (e.g. `new MySubClass()`) Wow, this is surprising!
+ * Answer: Yes. When the sub-class is instantiated (e.g. `new MySubClass()`) Wow, this is surprising (at least to me)!
  */
-class EvasiveSubclass extends Evasive {
+export class EvasiveSubclass extends Evasive {
     constructor() {
         super();
         console.log("[EvasiveSubclass] Hello from the constructor")
     }
 }
-
-module.exports = {Evasive, EvasiveSubclass}
