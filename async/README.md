@@ -21,19 +21,19 @@ Follow these instructions to run the example programs.
     * I used version 18.12.1
 2. Run the traditional callback-based program:
     * ```shell
-      node timeout-with-callbacks.js
+      node timeout-with-callbacks.mjs
       ```
 3. Next, run the promise-based program:
     * ```shell
-      node timeout-with-promises.js
+      node timeout-with-promises.mjs
       ```
 4. Next, run the generator-based program:
     * ```shell
-      node timeout-with-generators.js
+      node timeout-with-generators.mjs
       ```
 5. Finally, run the async/await-based program:
     * ```shell
-      node timeout-with-async-await.js
+      node timeout-with-async-await.mjs
       ```
 6. Experiment!
     * Change the code, re-run the programs, and think critically so you can learn these JavaScript features "in your
