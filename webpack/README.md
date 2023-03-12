@@ -6,6 +6,7 @@ An intermediate Node/NPM project that uses webpack to build a TypeScript program
 > 
 > -- <cite>https://webpack.js.org/concepts/</cite>
 
+
 ## Design
 
 Webpack (stylized as "webpack" but capitalized when used to start a sentence) has steadily grown over the years since
@@ -13,6 +14,7 @@ its inception in 2012 (!) to become an extensive "software building machine" for
 like to create a working example of a webpack-based project in 2021. The project will use TypeScript. I like plain
 JavaScript too, but for the sake of a webpack example project, it's interesting to splice in TypeScript which requires a
 compilation build step.
+
 
 ## Instructions
 
@@ -22,11 +24,11 @@ Follow these instructions to build and run the project.
    * ```shell
      npm install
      ```
-1. Build the project:
+2. Build the project:
    * ```shell
      npm run build
      ```
-1. Alternatively, build the project continuously and serve the output:
+3. Alternatively, build the project continuously and serve the output:
    * ```shell
      npm start
      ```
@@ -41,6 +43,7 @@ classic (traditional? idiomatic?) pattern of loading CSS via `<link rel="stylesh
 
 Webpack's extensive user guide (much appreciated, great work on the guides!) describes the pattern for loading CSS in
 under the [Asset Management sub-guide](https://webpack.js.org/guides/asset-management/#loading-css).
+
 
 ## Dependencies
 
@@ -69,7 +72,7 @@ dependency.
 | @types/lodash (via DefinitelyTyped) | I don't know where to find a changelog for this.                                       |
 | RxJS (a TypeScript library)         | <https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md>                           |
 | CSS Loader                          | <https://github.com/webpack-contrib/css-loader/releases>                               |
-| HTML Webpack Plugin                 | <https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md>               |
+| HTML webpack Plugin                 | <https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md>               |
 | Style Loader                        | <https://github.com/webpack-contrib/style-loader/blob/master/CHANGELOG.md>             |
 | ts-loader                           | <https://github.com/TypeStrong/ts-loader/blob/main/CHANGELOG.md>                       |
 | TypeScript                          | <https://github.com/Microsoft/TypeScript/releases>                                     |
@@ -106,6 +109,7 @@ latest: 4.17.21
 published a year ago by bnjmnt4n <benjamin@dev.ofcr.se>
 ```
 
+
 ## Wish List
 
 General clean ups, ITEMs and things I wish to implement for this project:
@@ -115,6 +119,7 @@ General clean ups, ITEMs and things I wish to implement for this project:
 * [ ] Consider creating a `webpack/`sub-project in <https://github.com/dgroomes/web-playground> and then removing the HTML
       and CSS components from the `webpack/` project in `javascript-playground` because after all, it's a playground for
       JavaScript not necessarily other stuff in the browser like HTML and CSS.
+
 
 ## Reference 
 
