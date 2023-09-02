@@ -9,7 +9,7 @@ This is an npm-based JavaScript library that lists animal names and the type of 
 the animals are found in. This library is written using ECMAScript modules. Read about [Node.js support for ECMAScript modules in the Node.js docs](https://nodejs.org/api/esm.html).
 
 Usually, npm-based libraries are published to the npm registry available on the public internet. However, for this
-example project we don't need to reach so far and instead we can publish (in a sense) the `animals-library` distribution
+example project we don't need to reach so far, and instead we can publish (in a sense) the `animals-library` distribution
 to our local file system using npm's `pack` command.
 
 

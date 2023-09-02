@@ -44,7 +44,7 @@ See the README in [async/](async/).
 
 ## `file/`
 
-Reading, decoding and writing files in NodeJS.
+Reading, decoding and writing files in Node.js.
 
 See the README in [file/](file/).
 
@@ -106,7 +106,7 @@ See the README in [npm-library-typescript-multi-workspace-rollup-api-extractor/]
 * [MDN web docs: `JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
 * [MDN web docs: Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
 * [MDN web docs: Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
-* [nodejs: ECMAScript modules](https://nodejs.org/api/esm.html#esm_enabling)
+* [Node.js: ECMAScript modules](https://nodejs.org/api/esm.html#esm_enabling)
 * [StackOverflow question and answer: a form of multi-module projects](https://stackoverflow.com/a/29787493)
 * [Webpack GitHub issue #2933: *support output.libraryTarget: 'module'*](https://github.com/webpack/webpack/issues/2933)
 

@@ -38,7 +38,7 @@ combinations of software toolchains like [Rollup](https://rollupjs.org/guide/en/
 
 ## Wish List
 
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
 * [x] DONE How do you make it so that I can do `import {animals} from 'animals-library'` instead of `import {animals} from 'animals-library/dist/animals.mjs'`?
   * See [*Subpath exports*](https://nodejs.org/api/packages.html#subpath-exports)

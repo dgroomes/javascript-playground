@@ -1,11 +1,11 @@
 # file
 
-Reading, decoding and writing files in NodeJS.
+Reading, decoding and writing files in Node.js.
 
 
 ## Overview
 
-This project defines a sample program that uses the NodeJS file APIs like `file`, `ReadStream` and `WriteStream` to read
+This project defines a sample program that uses the Node.js file APIs like `file`, `ReadStream` and `WriteStream` to read
 files, decode the text content and write files. Follow the source code closely to learn these concepts in more depth.
 
 
@@ -14,12 +14,12 @@ files, decode the text content and write files. Follow the source code closely t
 Follow these instructions to run the example program.
 
 1. Run the program
-  * ```shell
-    ./file.mjs
-    ```
-1. Inspect the output
-  * The files `copy-of-README.md` and `copy-of-with-substitutions-README.md` should be created in the current directory.
-    These files are ignored by Git.
+   * ```shell
+     ./file.mjs
+     ```
+2. Inspect the output
+   * The files `copy-of-README.md` and `copy-of-with-substitutions-README.md` should be created in the current directory.
+     These files are ignored by Git.
 
 
 ## Wish List

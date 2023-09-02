@@ -10,7 +10,7 @@
    *
    * If the path starts with "./" or "../", the path is resolved relative to the folder of the file that contains
    * the "extends" field.  Otherwise, the first path segment is interpreted as an NPM package name, and will be
-   * resolved using NodeJS require().
+   * resolved using Node.js require().
    *
    * SUPPORTED TOKENS: none
    * DEFAULT VALUE: ""

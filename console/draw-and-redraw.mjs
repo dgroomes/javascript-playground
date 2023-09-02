@@ -1,4 +1,4 @@
-// Use the NodeJS "readline" API to draw things to the console.
+// Use the Node.js "readline" API to draw things to the console.
 import readline from "readline";
 
 /**
