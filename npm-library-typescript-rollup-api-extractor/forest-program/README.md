@@ -22,17 +22,17 @@ This program is written using ECMAScript modules. Read about [Node.js support fo
 
 Follow these instructions to build and run the program:
 
-1. Use NPM version 8.5.5 or later
+1. Use npm version 8.5.5 or later
 2. Install the dependencies:
    * ```shell
      npm install
      ```
-5. Transpile the TypeScript:
+3. Transpile the TypeScript:
    * ```shell
      npm run build
      ```
-3. Use Node version v16.15.0 or later
-4. Run the program:
+4. Use Node version v16.15.0 or later
+5. Run the program:
    * ```shell
      node forest-story.js
      ```

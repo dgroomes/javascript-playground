@@ -1,6 +1,6 @@
 # webpack
 
-An intermediate Node/NPM project that uses webpack to build a TypeScript program.
+An intermediate Node.js/npm project that uses webpack to build a TypeScript program.
 
 > At its core, webpack is a static module bundler for modern JavaScript applications.
 > 
@@ -80,7 +80,7 @@ dependency.
 | webpack CLI                         | <https://github.com/webpack/webpack-cli/blob/master/packages/webpack-cli/CHANGELOG.md> |
 | webpack-dev-server                  | <https://github.com/webpack/webpack-dev-server/blob/master/CHANGELOG.md>               |
 
-NPM does have a neat feature to show the latest version of a library. It's the `npm view <package>` command. It shows
+npm does have a neat feature to show the latest version of a library. It's the `npm view <package>` command. It shows
 some metadata about a library (well, "package") like the latest version and it's source code link (usually GitHub, of course). 
 
 For example, `npm view lodash` shows:

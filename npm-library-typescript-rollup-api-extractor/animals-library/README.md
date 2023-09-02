@@ -6,7 +6,7 @@ A TypeScript library that lists animal names. The library is bundled with Rollup
 
 Follow these instructions to build the `animals-library` distribution:
 
-1. Use NPM version 8.5.5 or later
+1. Use npm version 8.5.5 or later
 2. Install the dependencies:
    * ```shell
      npm install

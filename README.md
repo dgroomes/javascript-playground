@@ -58,14 +58,14 @@ See the README in [misc/](misc/).
 
 ## `webpack/`
 
-An intermediate Node/NPM project that uses webpack to build a TypeScript program.
+An intermediate Node.js/npm project that uses webpack to build a TypeScript program.
 
 See the README in [webpack/](webpack/).
 
 
 ## `npm-library/`
 
-An example NPM-based library and an example NPM-based program that consumes it.
+An example npm-based library and an example npm-based program that consumes it.
 
 See the README in [npm-library/](npm-library/).
 
@@ -123,7 +123,7 @@ General clean ups, TODOs and things I wish to implement for this project:
   well, but I mean it).
 * [x] DONE Add a well-described async/await example that creates a Promise (and probably use the `setTimeout` function)
 * [x] DONE Implement an async program with generators.
-* [ ] Lowercase "npm". npm is stylized as "npm" not "NPM".
+* [x] DONE Lowercase "npm". npm is stylized as "npm" not "NPM".
 * [ ] In the many `npm-library*` subprojects, clean up a couple things. Push the `.gitignore` files into the individual
   projects. For example, push `animals-library-*.tgz` into `npm-library/animals-library`. Also, in the READMEs of the `forest-story`
   projects, use the `If needed, re-install `animals-library` style (a step) instead of explaining that step outside of
@@ -158,5 +158,5 @@ General clean ups, TODOs and things I wish to implement for this project:
   * This was implemented in `../npm-library-rollup/`
 * [x] DONE Create an example project of: a TypeScript library compiled with `tsc`
   * This was implemented in `../npm-library-typescript/`
-* [x] DONE Create an example project of: A monolith-style repository with local libraries defined as NPM workspaces and a workspace that acts as the runnable
+* [x] DONE Create an example project of: A monolith-style repository with local libraries defined as npm workspaces and a workspace that acts as the runnable
   consumer program.
