@@ -30,6 +30,6 @@ Follow these instructions to run the example program.
 
 ## Wish List
 
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
 * [x] DONE Stop using `require`. I think I can be completely done with CommonJS.

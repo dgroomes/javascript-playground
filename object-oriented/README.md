@@ -15,7 +15,7 @@ Follow these instructions to run the program:
 
 ## Wish List
 
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
 * [x] DONE Be done with CommonJS. No more `require`. Please use ES6 modules and the `import` keyword. We're at the point where
   I don't need CommonJS example code.

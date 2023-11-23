@@ -32,7 +32,7 @@ Implementing this project was a good exercise, however. My final conclusion is:
 
 ## Wish List
 
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
 * [x] DONE It should really be published as `animals-library` and not `animal-lister`. This is consistent with the other
   example projects.

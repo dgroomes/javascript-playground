@@ -113,7 +113,7 @@ See the README in [npm-library-typescript-multi-workspace-rollup-api-extractor/]
 
 ## Wish List
    
-General clean ups, TODOs and things I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
 * [ ] Explore options to bundle the source code into a single HTML file. Why? I think the "single document" model (i.e. just
   a `index.html` and no other files) is killer. For a few reasons. For one, it's the only way to run JavaScript in the

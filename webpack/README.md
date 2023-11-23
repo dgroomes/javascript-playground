@@ -112,7 +112,7 @@ published a year ago by bnjmnt4n <benjamin@dev.ofcr.se>
 
 ## Wish List
 
-General clean ups, ITEMs and things I wish to implement for this project:
+General clean-ups, ITEMs and things I wish to implement for this project:
 
 * [x] DONE Bug. The source `index.html` file is not actually used.
 * [x] DONE Add CSS. Make sure to use the idiomatic webpack way. 
