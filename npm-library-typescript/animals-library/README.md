@@ -29,7 +29,7 @@ Follow these instructions to build the `animals-library` distribution.
 ## Reference
 
 * [npm "TypeScript" package](https://www.npmjs.com/package/typescript)
-  * You can easily use the TypeScript compiler `tsc` by include TypeScript directly as a development dependency in your
+  * You can easily use the TypeScript compiler `tsc` by including TypeScript directly as a development dependency in your
     npm project.
   * With the `tsc` CLI, I could quickly learn and discover things that I wouldn't be able to by using a tool that abstracts
     and wraps over `tsc`. For example, I did `npx tsc --init` and I got a nice annotated `tsconfig.json` file. 
