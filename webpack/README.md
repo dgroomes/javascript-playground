@@ -56,10 +56,10 @@ the manifest file name is `build.gradle.kts`. The `.kts` file type is a Kotlin *
 following:
 
 ```kotlin
-val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
-val httpComponentsV5Version = "5.1.3" // HttpComponents v5 releases: https://hc.apache.org/news.html
-val wireMockVersion = "2.33.1" // WireMock releases: https://github.com/tomakehurst/wiremock/tags
-val http4kVersion = "4.25.8.0" // http4K releases: https://github.com/http4k/http4k/releases
+val slf4jVersion = "2.0.10" // SLF4J releases: http://www.slf4j.org/news.html
+val httpComponentsV5Version = "5.2.4" // HttpComponents v5 releases: https://hc.apache.org/news.html
+val wireMockVersion = "3.3.1" // WireMock releases: https://github.com/tomakehurst/wiremock/tags
+val http4kVersion = "5.12.1.0" // http4K releases: https://github.com/http4k/http4k/releases
 ```
 
 This makes it easy for me to quickly research the latest releases for a library and make an informed decision about
@@ -72,8 +72,8 @@ dependency.
 | Library                             | Latest releases                                                                        |
 |-------------------------------------|----------------------------------------------------------------------------------------|
 | lodash (a JavaScript library)       | <https://github.com/lodash/lodash/tags>                                                |
-| @types/lodash (via DefinitelyTyped) | I don't know where to find a changelog for this.                                       |
-| RxJS (a TypeScript library)         | <https://github.com/ReactiveX/rxjs/blob/master/CHANGELOG.md>                           |
+| @types/lodash (via DefinitelyTyped) | <https://www.npmjs.com/package/@types/lodash?activeTab=versions>                       |
+| RxJS (a TypeScript library)         | <https://github.com/ReactiveX/rxjs/blob/7.x/CHANGELOG.md>                              |
 | CSS Loader                          | <https://github.com/webpack-contrib/css-loader/releases>                               |
 | HTML webpack Plugin                 | <https://github.com/jantimon/html-webpack-plugin/blob/main/CHANGELOG.md>               |
 | Style Loader                        | <https://github.com/webpack-contrib/style-loader/blob/master/CHANGELOG.md>             |
@@ -122,7 +122,7 @@ General clean-ups, ITEMs and things I wish to implement for this project:
 * [ ] Promote this project to its own playground-style repository because webpack is a big topic and it's also not even
   a JavaScript-specific topic. I need a place to put runnable and well-explained webpack examples because I use it a lot,
   and it's complicated and I need working references.
-* [ ] Upgrade deps
+* [x] DONE Upgrade deps
 * [ ] The "re-exporting TypeScript definition" is more like a TypeScript example. That should probably be moved to
   a subproject in <https://github.com/dgroomes/typescript-playground>.
 
