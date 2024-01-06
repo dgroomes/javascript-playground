@@ -5,20 +5,21 @@
 
 ## Overview
 
-This repository is my own exploration of JavaScript (JS) and the JavaScript ecosystem. It codifies some of the JS
-concepts and trivia I've learned into runnable example programs, complete with verbose commentary and references.
+This repository is my own exploration of JavaScript (JS) and the JavaScript ecosystem (although I want to descope non-JS-language things outside of this repository).
+It codifies some of the JS concepts and trivia I've learned into runnable example programs, complete with verbose
+commentary and references.
 
-**NOTE**: This project was developed on macOS. It is for my own personal use.
+**NOTE**: This project was developed on macOS. It is designed for my own personal use.
 
 
-## Standalone sub-projects
+## Standalone subprojects
 
-This repository illustrates different concepts, patterns and examples via standalone sub-projects. Each sub-project is
-completely independent of the others and do not depend on the root project. This _standalone sub-project constraint_
-forces the sub-projects to be complete and maximizes the reader's chances of successfully running, understanding, and
+This repository illustrates different concepts, patterns and examples via standalone subprojects. Each subproject is
+completely independent of the others and do not depend on the root project. This _standalone subproject constraint_
+forces the subprojects to be complete and maximizes the reader's chances of successfully running, understanding, and
 re-using the code.
 
-The sub-projects include:
+The subprojects include:
 
 
 ## `console/`
@@ -98,19 +99,6 @@ An example npm-based multi-workspace TypeScript library bundled with Rollup. It 
 See the README in [npm-library-typescript-multi-workspace-rollup-api-extractor/](npm-library-typescript-multi-workspace-rollup-api-extractor/).
 
 
-## Reference
-
-* [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-* [MDN web docs: `export` keyword](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export)
-* [MDN web docs: `import` keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
-* [MDN web docs: `JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
-* [MDN web docs: Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
-* [MDN web docs: Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
-* [Node.js: ECMAScript modules](https://nodejs.org/api/esm.html#esm_enabling)
-* [StackOverflow question and answer: a form of multi-module projects](https://stackoverflow.com/a/29787493)
-* [Webpack GitHub issue #2933: *support output.libraryTarget: 'module'*](https://github.com/webpack/webpack/issues/2933)
-
-
 ## Wish List
    
 General clean-ups, TODOs and things I wish to implement for this project:
@@ -160,3 +148,16 @@ General clean-ups, TODOs and things I wish to implement for this project:
   * This was implemented in `../npm-library-typescript/`
 * [x] DONE Create an example project of: A monolith-style repository with local libraries defined as npm workspaces and a workspace that acts as the runnable
   consumer program.
+
+
+## Reference
+
+* [MDN web docs: JavaScript classes reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+* [MDN web docs: `export` keyword](https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export)
+* [MDN web docs: `import` keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+* [MDN web docs: `JSON.stringify`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify)
+* [MDN web docs: Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy)
+* [MDN web docs: Reflect](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect)
+* [Node.js: ECMAScript modules](https://nodejs.org/api/esm.html#esm_enabling)
+* [StackOverflow question and answer: a form of multi-module projects](https://stackoverflow.com/a/29787493)
+* [Webpack GitHub issue #2933: *support output.libraryTarget: 'module'*](https://github.com/webpack/webpack/issues/2933)

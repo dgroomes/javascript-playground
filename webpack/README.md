@@ -10,8 +10,8 @@ An intermediate Node.js/npm project that uses webpack to build a TypeScript prog
 ## Design
 
 Webpack (stylized as "webpack" but capitalized when used to start a sentence) has steadily grown over the years since
-its inception in 2012 (!) to become an extensive "software building machine" for web-based projects. As such, I would
-like to create a working example of a webpack-based project in 2021. The project will use TypeScript. I like plain
+its inception in 2012 to become an extensive "software building machine" for web-based projects. As such, I would
+like to create working examples of webpack-based projects. The project will use TypeScript. I like plain
 JavaScript too, but for the sake of a webpack example project, it's interesting to splice in TypeScript which requires a
 compilation build step.
 
@@ -20,19 +20,22 @@ compilation build step.
 
 Follow these instructions to build and run the project.
 
-1. Install dependencies
+1. Pre-requisite: Node.js
+    * I used Node v20.9.0
+2. Install dependencies
    * ```shell
      npm install
      ```
-2. Build the project:
+3. Build the project:
    * ```shell
      npm run build
      ```
-3. Alternatively, build the project continuously and serve the output:
+4. Alternatively, build the project continuously and serve the output:
    * ```shell
      npm start
      ```
    * The project is ready to be viewed in the browser! Open <http://[::1]:8080>.
+
 
 ## Webpack Philosophy
 
@@ -116,9 +119,12 @@ General clean-ups, ITEMs and things I wish to implement for this project:
 
 * [x] DONE Bug. The source `index.html` file is not actually used.
 * [x] DONE Add CSS. Make sure to use the idiomatic webpack way. 
-* [ ] Consider creating a `webpack/`sub-project in <https://github.com/dgroomes/web-playground> and then removing the HTML
-      and CSS components from the `webpack/` project in `javascript-playground` because after all, it's a playground for
-      JavaScript not necessarily other stuff in the browser like HTML and CSS.
+* [ ] Promote this project to its own playground-style repository because webpack is a big topic and it's also not even
+  a JavaScript-specific topic. I need a place to put runnable and well-explained webpack examples because I use it a lot,
+  and it's complicated and I need working references.
+* [ ] Upgrade deps
+* [ ] The "re-exporting TypeScript definition" is more like a TypeScript example. That should probably be moved to
+  a subproject in <https://github.com/dgroomes/typescript-playground>.
 
 
 ## Reference 
