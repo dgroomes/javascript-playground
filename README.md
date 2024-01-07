@@ -57,13 +57,6 @@ Miscellaneous JavaScript code. Learning by doing.
 See the README in [misc/](misc/).
 
 
-## `webpack/`
-
-An intermediate Node.js/npm project that uses webpack to build a TypeScript program.
-
-See the README in [webpack/](webpack/).
-
-
 ## `npm-library/`
 
 An example npm-based library and an example npm-based program that consumes it.
