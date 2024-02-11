@@ -43,6 +43,13 @@ Showcasing the asynchronous programming features of JavaScript.
 See the README in [async/](async/).
 
 
+## `repl/`
+
+This is a working example of the Node.js REPL (Read-Eval-Print-Loop) and how to make the most of it.
+
+See the README in [repl/](repl/).
+
+
 ## `file/`
 
 Reading, decoding and writing files in Node.js.
@@ -117,6 +124,7 @@ General clean-ups, TODOs and things I wish to implement for this project:
 * [ ] Create an example project of: a JavaScript library that also contains TypeScript type definitions
 * [x] DONE 2023 upgrades.
 * [x] DONE Stop using `require`. I think I can be completely done with CommonJS.
+* [ ] De-scope Node.js subprojects from this repository. `file/`, `repl/` and `console/` should be in a `nodejs-playground`. 
 
 
 ### Finished Items
