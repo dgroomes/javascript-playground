@@ -5,20 +5,18 @@ This is a working example of the Node.js REPL (Read-Eval-Print-Loop) and how to 
 
 ## Overview
 
-There are a few key points:
+REPLs are **fast and iterative**. Languages with runtimes usually have a REPL: Python, Ruby, Node.js, Java and more. In
+these languages, you can start a REPL on the commandline, write some "hello world"-style code, and see the result
+immediately. You can build up a program incrementally and see the results of each step. This is a great way to quickly
+learn and experiment.
 
-* REPLs are **fast and iterative**
-  * Languages with runtimes usually have a REPL: Python, Ruby, Node.js, Java and more. In these languages, you can
-    start a REPL on the commandline, write some "hello world"-style code, and see the result immediately. You can build
-    up a program incrementally and see the results of each step. This is a great way to quickly learn and experiment.
-* REPLs can source **existing code**
-  * While REPLs are usually introduced as a way to write a "hello world" program, they can also be used to source existing
-    code like your own source code or third-party libraries. You can use a REPL over a large and sophisticated codebase.
-    There's no reason to limit REPLs only to the classroom.
+REPLs can source **existing code**. While REPLs are usually introduced as a way to write a "hello world" program, they
+can also be used to source existing code like your own program code or third-party libraries. You can use a REPL over a
+large and sophisticated codebase. There's no reason to limit REPLs only to the classroom.
 
-What does it look like to use the Node.js REPL and preload some code? Let's find out. I found that when using ESM modules,
-the best route is to create a custom launcher for a Node.js REPL that is customized with some dynamic imports. I got on
-the right track thanks to this [GitHub Issues comment](https://github.com/nodejs/node/issues/44094#issuecomment-1296599749). 
+What does it look like to use the Node.js REPL and "pre-import" some of my own code? This project explores that idea.
+I found that when using ESM modules, the best route is to create a custom launcher for a Node.js REPL that is customized
+with some imports. I got on the right track thanks to this [GitHub Issues comment](https://github.com/nodejs/node/issues/44094#issuecomment-1296599749). 
 
 
 ## Instructions
@@ -61,9 +59,9 @@ Follow these instructions to use the Node.js REPL and preload some code.
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* [ ] Flesh out the history and technical limitation so Node.js REPLs with regard to ESM vs CommonJS. We are using a
+* [x] DONE (no need for dynamic imports; I don't care to consider CommonJS) Flesh out the history and technical limitation so Node.js REPLs with regard to ESM vs CommonJS. We are using a
   custom REPL here instead of the "preload" technique because of the ESM limitation.
-* [ ] What does it look like to use a REPL with TypeScript?
+* [ ] SKIP (Interesting, but I'll consider it out of scope. I intended this as a showcase of Node.js) What does it look like to use a REPL over TypeScript code?
 
 
 ## Reference
